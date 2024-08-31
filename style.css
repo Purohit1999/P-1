@@ -1,0 +1,353 @@
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background-color: #a6c4e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px; /* Ensure padding for smaller screens */
+}
+
+.wrapper {
+  background-color: #ffffff;
+  padding: 2em; /* Adjusted padding for better spacing */
+  border-radius: 1em;
+  perspective: 800px;
+  width: 100%;
+  max-width: 500px; /* Limits the width on large screens */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.credit-card {
+  position: relative;
+  width: 100%;
+  padding-bottom: 62.5%; /* Maintain aspect ratio for 350px width and 220px height */
+  margin-bottom: 1em; /* Adjusted margin between card and form */
+  transform-style: preserve-3d;
+  transition: 0.3s;
+}
+/* Landing page styles */
+#landing-page {
+  background-color: #ffffff;
+  padding: 3em;
+  border-radius: 1em;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#landing-page h2 {
+  margin-bottom: 1em;
+  font-size: 2.5em;
+  color: #333;
+}
+
+#landing-page p {
+  margin-bottom: 0.8em;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+#landing-page .reference {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #5bb0f1;
+}
+
+#landing-page .instruction {
+  font-style: italic;
+  color: #666;
+}
+
+#home-button {
+  margin-top: 1.5em;
+  padding: 0.8em 1.5em;
+  font-size: 1.2em;
+  background-color: #5bb0f1;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#home-button:hover {
+  background-color: #4a9ad9;
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.popup p {
+  margin-bottom: 1em;
+}
+
+.popup button {
+  padding: 0.5em 1em;
+  background-color: #5bb0f1;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.payment-info {
+  font-size: 1.25em; /* Adjust font size */
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#5bb0f1, #010919);
+  border-radius: 1em;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  padding: 2em 1em;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.branding img {
+  width: 50px;
+  height: auto;
+}
+
+.card-back {
+  position: absolute;
+  transform: rotateY(180deg);
+}
+
+.card-number {
+  color: #ffffff;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em; /* Slightly increased font size */
+  margin-top: 3em;
+}
+
+.details {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5em;
+  font-size: 0.9em; /* Slightly increased font size */
+}
+
+.details span {
+  display: block;
+}
+
+.details #card-holder-name {
+  text-transform: uppercase;
+}
+
+.card-back .black-strip {
+  position: relative;
+  background-color: #000000;
+  height: 50px;
+  top: 2em;
+}
+
+.card-back .white-strip {
+  top: 3em;
+  position: relative;
+  text-align: right;
+}
+
+.card-back .white-strip span {
+  margin-right: 1em;
+}
+
+.card-back .white-strip div {
+  height: 30px;
+  background-color: #ffffff;
+  margin-top: 0.5em;
+}
+
+/* Adjusted Visa Logo Position */
+.card-back .visa-logo {
+  position: absolute;
+  width: 50px;
+  right: 1em;
+  bottom: 1em; /* Adjusted position to keep it within the card */
+  margin-top: 0;
+}
+
+form {
+  width: 100%;
+  margin-top: 2em;
+}
+
+label,
+input {
+  display: block;
+}
+
+label {
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #000000;
+  padding: 1em 0.5em;
+  border-radius: 0.5em;
+}
+
+input:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+form .date-cvv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-cvv div {
+  width: 48%;
+}
+
+/* OTP Section Styles */
+.otp-section {
+  margin-bottom: 1em;
+}
+/* Button Container Styles */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.otp-section > div {
+  flex-grow: 1;
+  margin-right: 1em;
+}
+
+.send-otp-button {
+  padding: 0.6em 1em;
+  font-size: 1.1em;
+  background-color: #4CAF50;  /* Green background */
+  color: white;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-otp-button:hover {
+  background-color: #45a049;
+}
+
+/* Submit Payment Button Styles */
+.submit-section {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1em;
+}
+
+.submit-payment-button {
+  padding: 0.8em 1.5em;
+  font-size: 1.2em;
+  background-color: #007BFF;  /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-payment-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  .wrapper {
+      width: 80%;
+      max-width: 600px;
+      padding: 2.5em 1.5em;
+  }
+
+  .credit-card {
+      padding-bottom: 56.25%;
+  }
+
+  .payment-info {
+      font-size: 1.5em;
+  }
+
+  .branding img {
+      width: 60px;
+  }
+
+  .card-number {
+      font-size: 1em;
+  }
+
+  .details {
+      font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+      width: 100%;
+      padding: 1.5em 1em;
+  }
+
+  .credit-card {
+      padding-bottom: 56.25%;
+  }
+
+  .payment-info {
+      font-size: 1.1em;
+  }
+
+  .branding img {
+      width: 40px;
+  }
+
+  .card-number {
+      font-size: 0.85em;
+  }
+
+  .details {
+      font-size: 0.85em;
+  }
+}
