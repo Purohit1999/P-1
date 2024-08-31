@@ -63,8 +63,6 @@ Landing Page: Added a landing page that displays a message after the form is sub
 
 Responsive Layout: The layout scales better across different screen sizes, ensuring usability and aesthetics on various devices.
 
-Here's a detailed UX/UI section for the README.md file of your project:
-
 
 ## UX/UI Design
 
@@ -134,26 +132,23 @@ Wireframes were developed to outline the structure and layout of the web page be
 
 
 
-This section should give a comprehensive overview of the UX/UI design aspects of your project, making it clear to collaborators and users alike.
-
-
 ## 2D Skeleton Models
 
 ### Mobile View
 |-----------------------|
-|       Navbar          |
+|       Logo            |
 |-----------------------|
-|     Hero Section      |
+|     Card Number       |
 |-----------------------|
-|     Services          |
+|       Name            |
 |-----------------------|
-|     Projects          |
+|     Expiries          |
 |-----------------------|
-|     Testimonials      |
+|     Payment info      |
 |-----------------------|
-|     Contact Us        |
+|       Form            |
 |-----------------------|
-|       Footer          |
+|        Submit         |
 |-----------------------|
 
 ![Image Alt]()
@@ -163,38 +158,38 @@ This section should give a comprehensive overview of the UX/UI design aspects of
 
 ### Tablet View
 |------------------------------------------------|
-|                    Navbar                      |
+|                    Logo                        |
 |------------------------------------------------|
-|                 Hero Section                   |
+|                 Card Number                    |
 |------------------------------------------------|
-|                   Services                     |
+|                   Name                         |
 |------------------------------------------------|
-|                   Projects                     |
+|                   Expires                      |
 |------------------------------------------------|
-|                 Testimonials                   |
+|                 Payment info                   |
 |------------------------------------------------|
-|                 Contact Us                     |
+|                    Form                        |
 |------------------------------------------------|
-|                    Footer                      |
+|                    Submit                      |
 |------------------------------------------------|
 
 ![Image Alt]()
 
 ### Desktop View
 |----------------------------------------------------------------------------------|
-|                                    Navbar                                        |
+|                                    Logo                                          |
 |----------------------------------------------------------------------------------|
-|                                Hero Section                                      |
+|                                Card Number                                       |
 |----------------------------------------------------------------------------------|
-|                                  Services                                        |
+|                                   Name                                           |
 |----------------------------------------------------------------------------------|
-|                                  Projects                                        |
+|                                  Expires                                         |
 |----------------------------------------------------------------------------------|
-|                                Testimonials                                      |
+|                                Payment info                                      |
 |----------------------------------------------------------------------------------|
-|                                Contact Us                                        |
+|                                    Form                                          |
 |----------------------------------------------------------------------------------|
-|                                    Footer                                        |
+|                                    Submit                                        |
 |----------------------------------------------------------------------------------|
 
 ![Image Alt]()
