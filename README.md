@@ -246,16 +246,16 @@ Full-Width Layout: The website uses the full width of the screen, offering a mor
 Enhanced Visuals: High-quality backgrounds are displayed in full resolution, making the site visually appealing on larger screens.
 
 ## Features
-**Random Reference Number Generation on Landing Page** : A unique reference number is generated each time a user lands on the page, providing a personalized experience.  
-**Return to Home Functionality** : Users can easily return to the home page from any section of the website, enhancing navigation and user flow.  
-**Interactive Cards** : Service offerings are presented as interactive cards that flip on hover, providing additional details in an engaging way.  
-**Smooth Scrolling** : The site implements smooth scrolling for an enhanced navigation experience, ensuring that users can move between sections fluidly.  
-**Responsive Design** : The website is fully responsive, ensuring that it looks and functions well on all devices, from smartphones to desktops.    
+- **Random Reference Number Generation on Landing Page** : A unique reference number is generated each time a user lands on the page, providing a personalized experience.  
+- **Return to Home Functionality** : Users can easily return to the home page from any section of the website, enhancing navigation and user flow.  
+- **Interactive Cards** : Service offerings are presented as interactive cards that flip on hover, providing additional details in an engaging way.  
+- **Smooth Scrolling** : The site implements smooth scrolling for an enhanced navigation experience, ensuring that users - can move between sections fluidly.  
+- **Responsive Design** : The website is fully responsive, ensuring that it looks and functions well on all devices, from smartphones to desktops.    
 
 ### Features Left to Implement
-User Authentication: Future versions will include user login functionality, allowing users to save their preferences and track interactions.
-Advanced Analytics: Integration of detailed analytics to track user behavior and optimize content based on user interactions.
-Multilingual Support: Adding support for multiple languages to cater to a global audience.
+- **User Authentication** : Future versions will include user login functionality, allowing users to save their preferences and track interactions.  
+- **Advanced Analytics** : Integration of detailed analytics to track user behavior and optimize content based on user interactions.
+- **Multilingual Support** : Adding support for multiple languages to cater to a global audience.
 
 ## Technologies Used
 - HTML5: Structure and content of the website.
@@ -291,19 +291,19 @@ Results :
 ### Testing User Stories from User Experience (UX) Section
 
 ### First Time Visitors Goals
-Ensured that the landing page is welcoming and clearly explains the purpose of the site.
-Verified that the navigation is intuitive, allowing first-time users to easily find what they need.  
+- Ensured that the landing page is welcoming and clearly explains the purpose of the site.
+- Verified that the navigation is intuitive, allowing first-time users to easily find what they need.  
 
 ### Returning Visitor Goals
-Tested the smooth scrolling and interactive elements to ensure they encourage repeat visits.
-Checked that users can quickly find updates or new content.
+- Tested the smooth scrolling and interactive elements to ensure they encourage repeat visits.
+- Checked that users can quickly find updates or new content.
 
 ### Frequent User Goals
-Ensured that frequent users can easily navigate to the sections they visit most often.
+- Ensured that frequent users can easily navigate to the sections they visit most often.
 Tested the functionality of the random reference number generator to ensure it consistently works as intended.
 
 ### Lighthouse
-Used Chrome Developer Tools Lighthouse to test site performance, best practices, and accessibility. 
+- Used Chrome Developer Tools Lighthouse to test site performance, best practices, and accessibility. 
 
 ![Image Alt]()
 
@@ -315,19 +315,17 @@ Used Chrome Developer Tools Lighthouse to test site performance, best practices,
 ![Image Alt]()
 
 ### Solved Bugs  
-Flipping Card Not Working: Fixed an issue where the flipping card would not display the back content properly.
-Custom Modal Opacity Issue: Resolved a bug where the custom modal was not appearing with the correct opacity, affecting visibility.
-Accepting Number in Card Number: Corrected the input validation to ensure only numerical values are accepted in the card number field.
-Expiry Date Not Accepting Less Than Current Year: Fixed the validation logic to ensure that the expiry date cannot be set to a year earlier than the current year.  
+- **Flipping Card Not Working** : Fixed an issue where the flipping card would not display the back content properly.
+Custom Modal Opacity Issue: Resolved a bug where the custom modal was not appearing with the correct opacity, affecting visibility.  
+- **Accepting Number in Card Number** : Corrected the input validation to ensure only numerical values are accepted in the card number field.  
+- **Expiry Date Not Accepting Less Than Current Year** : Fixed the validation logic to ensure that the expiry date cannot be set to a year earlier than the current year.  
 
 I wanted to bring to your attention an ongoing issue related to my GitHub account that is affecting the visibility of my P-1 project. Despite having made 20 commits (please find the enclosed screenshot), the page is still not accessible to tutors, mentors, or yourself. This is the same issue we encountered when I initially submitted the project.  
 
 During a recent tutoring session with Sara, we discussed this problem, and she suggested that I work from a new GitHub profile. Consequently, I transitioned my work from my previous profile (param155) to a new one (Purohit1999). Unfortunately, this means that the commits made under my old profile are not reflected on my new one. Additionally, I primarily use VS Code for my development work due to the slow performance of Gitpod, which significantly impacts my efficiency.  
 
-It appears that there might be a configuration issue with my student account on the Code Institute platform. My mentor also believes that this is the case, as the project remains inaccessible despite being public. I kindly request that you liaise with the appropriate team at Code Institute to resolve this matter, as I have invested a considerable amount of time in ensuring that my P-1-2 project is both attractive and responsive.   
-![Image Alt]()      
-- **Custom Modal Opacity Issue**: Fixed by adjusting CSS properties.
-- **Footer Social Media Not Centered**: `justify-content: center;` applied.    
+It appears that there might be a configuration issue with my student account on the Code Institute platform. My mentor also believes that this is the case, as the project remains inaccessible despite being public. I kindly request that you liaise with the appropriate team at Code Institute to resolve this matter, as I have invested a considerable amount of time in ensuring that my P-1-2 project is both attractive and responsive.     
+![Image Alt]()         
   ![Image Alt]()
 
 ### Unit Testing
