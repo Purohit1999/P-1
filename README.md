@@ -118,8 +118,6 @@ The typography is clean and modern, using a sans-serif font family that enhances
 
 ## User Stories  
 
-## User Stories
-
 ### 1. As a User, I want to enter my credit card information securely.
 - **Description**: The user can input their credit card details (card number, cardholder name, expiration date, and CVV) in a form that is visually linked to a dynamic credit card display, providing a secure and user-friendly experience.
 - **Acceptance Criteria**:
