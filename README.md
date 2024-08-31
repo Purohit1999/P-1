@@ -393,7 +393,84 @@ This file provides the styling for the webpage. Key styles include:
   - **Submit Payment Button**: Blue background with white text, also with hover effects.
 
 - **Media Queries**:
-  - **Responsive Design**: Adjusts the layout and font sizes based on the screen width, ensuring the webpage is usable on both small and large screens.  
+  - **Responsive Design**: Adjusts the layout and font sizes based on the screen width, ensuring the webpage is usable on both small and large screens.
+ 
+## Test :  
+
+### test.js
+
+The test suite provided in the `test.js` file is designed to verify the functionality of a credit card payment form. The tests are implemented using [Jest](https://jestjs.io/) and [JSDOM](https://github.com/jsdom/jsdom) to simulate the DOM environment. Below is an overview of the different test cases and their purposes.
+
+### Running the Tests
+
+1. **Ensure Dependencies Are Installed**:  
+   Make sure you have installed the necessary dependencies using `npm install`.
+
+2. **Run the Tests**:  
+   To execute the test suite, use the following command:
+   ```bash
+   npm test
+   ```
+
+### Test Overview
+
+#### 1. **Form Elements Presence**
+   - **Purpose**: Ensure all required form fields and buttons are present in the form.
+   - **Test Cases**:
+     - Verifies the presence of input fields for card number, card holder name, expiry date, CVV, email, and OTP.
+     - Confirms that the "Send OTP" and "Submit Payment" buttons are available.
+
+#### 2. **Card Number Input Functionality**
+   - **Purpose**: Validate the behavior of the card number input field.
+   - **Test Cases**:
+     - Checks if the card number is formatted correctly (e.g., `1234567890123456` becomes `1234 5678 9012 3456`).
+     - Ensures that non-numeric characters are not allowed.
+
+#### 3. **Card Holder Name Input Functionality**
+   - **Purpose**: Ensure correct behavior of the card holder name input field.
+   - **Test Cases**:
+     - Verifies that the card holder name is displayed in uppercase.
+     - Prevents numbers from being entered in the card holder name field.
+
+#### 4. **Expiry Date Input Functionality**
+   - **Purpose**: Test the input and formatting of the expiry date.
+   - **Test Cases**:
+     - Formats the expiry date correctly (e.g., `1223` becomes `12/23`).
+     - Disallows invalid months (e.g., `13/23`).
+
+#### 5. **CVV Input Functionality**
+   - **Purpose**: Validate the CVV input field behavior.
+   - **Test Cases**:
+     - Ensures only numeric input is allowed in the CVV field.
+     - Limits the CVV input to three digits.
+
+#### 6. **OTP Functionality**
+   - **Purpose**: Test the OTP sending mechanism.
+   - **Test Cases**:
+     - Sends OTP when the button is clicked if the email is provided.
+     - Shows an error message when attempting to send OTP without a valid email.
+
+#### 7. **Form Submission**
+   - **Purpose**: Validate the submission process of the payment form.
+   - **Test Cases**:
+     - Prevents form submission if the OTP is invalid.
+     - Allows form submission with a correct OTP and checks if the correct elements are displayed.
+
+#### 8. **Error Handling**
+   - **Purpose**: Ensure that errors are correctly handled and displayed.
+   - **Test Cases**:
+     - Displays an error message when invalid input (e.g., non-numeric card number) is detected.
+
+### Adding More Tests
+
+The existing test suite provides a comprehensive check of the primary functionalities of the credit card form. However, you can extend the tests by adding more specific cases or edge scenarios, such as:
+- Testing maximum length constraints for inputs.
+- Handling various edge cases, like empty fields, invalid input combinations, or user interactions (e.g., pressing backspace, pasting text).
+
+### Notes
+
+- **Mocking**: The test suite mocks the `showPopup` function to simulate error and success messages during user interactions.
+- **Global Variables**: `global.document` and `global.window` are set up before each test to simulate a browser environment using JSDOM.
 
 ## Deployment
 
