@@ -334,7 +334,7 @@ JavaScript Functions: Ensured all custom scripts work as expected, particularly 
 ### Further Testing
 - **Usability Testing**: Conduct tests to ensure ease of navigation, especially for first-time visitors.
 - **Performance Testing**: Ensure the webpage loads quickly across all devices, particularly mobile.
-- **A/B Testing**: Experiment with different call-to-action placements, button colors, and hero section layouts to maximize engagement.
+- **A/B Testing**: Experiment with different call-to-action placements, button colors, and section layouts to maximize engagement.
 - **Accessibility Testing**: Verify that the website meets accessibility standards (e.g., contrast ratios, alt texts, etc.).
 
   ![Image Alt]()
