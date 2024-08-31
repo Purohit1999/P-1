@@ -194,33 +194,35 @@ Wireframes were developed to outline the structure and layout of the web page be
 
 ![Image Alt]()
 
-## Design Choices
-- Clean and modern design with intuitive navigation.
-- Use of Bootstrap for responsive layout.
-- High-quality images and clear typography.
+## Design Choices  
+Minimalist Layout: The design follows a minimalist approach, focusing on simplicity and ease of use. This choice helps users find information quickly without distractions.
+Responsive Design: The layout adapts seamlessly across different screen sizes, ensuring a consistent user experience on mobile, tablet, and desktop devices.
+Intuitive Navigation: A clean, user-friendly navigation bar makes it easy to access various sections of the website, enhancing overall usability.
 
 ### Mobiles
-- Single-column layout with collapsible navbar.
+Adaptive Layout: The design collapses elements to fit smaller screens, providing a touch-friendly interface and ensuring that content is easily readable.
+Simplified Navigation: A hamburger menu is used to keep the navigation compact and accessible, making it easier for users to browse through the site on mobile
 
 ### Tablets
-- Two-column layout with more space for images and text.
+Optimized Grid System: The layout adjusts to utilize the larger screen space efficiently, displaying content in a grid format that is both visually appealing and functional.
+Touch Interactivity: Elements like buttons and links are appropriately spaced to accommodate touch interactions, improving the user experience on tablets.
 
 ### Desktops
-- Multi-column layout with larger images and more detailed sections.
+Full-Width Layout: The website uses the full width of the screen, offering a more immersive experience. The content is well-distributed across the screen, enhancing readability.
+Enhanced Visuals: High-quality images and backgrounds are displayed in full resolution, making the site visually appealing on larger screens.
 
 ## Features
-- Responsive Design: Ensures optimal viewing experience on all devices.
-- Hero Section: Eye-catching introduction with call-to-action.
-- Services Section: Overview of the services offered.
-- Projects Section: Showcases past work with descriptions.
-- Testimonials: Client feedback and endorsements.
-- Contact Form: Easy way for users to get in touch.
-- Footer: Links to social media and additional information.
+Random Reference Number Generation on Landing Page: A unique reference number is generated each time a user lands on the page, providing a personalized experience.
+Return to Home Functionality: Users can easily return to the home page from any section of the website, enhancing navigation and user flow.
+Interactive Cards: Service offerings are presented as interactive cards that flip on hover, providing additional details in an engaging way.
+Smooth Scrolling: The site implements smooth scrolling for an enhanced navigation experience, ensuring that users can move between sections fluidly.
+Responsive Design: The website is fully responsive, ensuring that it looks and functions well on all devices, from smartphones to desktops.
+Contact Form: A fully functional contact form is included, allowing users to easily get in touch with the developer for inquiries or feedback.
 
 ### Features Left to Implement
-- Blog Section: Share articles and insights.
-- Portfolio Filtering: Allow users to filter projects by category.
-- Live Chat: Real-time communication with visitors.
+User Authentication: Future versions will include user login functionality, allowing users to save their preferences and track interactions.
+Advanced Analytics: Integration of detailed analytics to track user behavior and optimize content based on user interactions.
+Multilingual Support: Adding support for multiple languages to cater to a global audience
 
 ## Technologies Used
 - HTML5: Structure and content of the website.
@@ -256,20 +258,16 @@ Results :
 ### Testing User Stories from User Experience (UX) Section
 
 ### First Time Visitors Goals
-- **Introduction**: Provide a clear and concise introduction to the services offered.  
-- **Engagement**: Capture attention through visually appealing design and clear messaging.  
-- **Navigation**: Ensure easy navigation to explore services, about section, and contact information.  
-- **Call to Action**: Encourage the first-time visitor to reach out via the contact form or explore more services.  
+Ensured that the landing page is welcoming and clearly explains the purpose of the site.
+Verified that the navigation is intuitive, allowing first-time users to easily find what they need.  
 
 ### Returning Visitor Goals
-- **Re-engagement**: Provide quick access to detailed service pages such as Front End Development, Back End Development, etc.
-- **Updates**: Showcase any new services, projects, or testimonials to keep the content fresh and relevant.
-- **Conversion**: Encourage returning visitors to take the next step, such as contacting for a project consultation.
+Tested the smooth scrolling and interactive elements to ensure they encourage repeat visits.
+Checked that users can quickly find updates or new content.
 
 ### Frequent User Goals
-- **Resource Access**: Offer frequent users direct access to specific service pages and detailed information they frequently seek.
-- **Trust Building**: Reinforce trust by consistently providing updated testimonials, new projects, and continued engagement through social media links.
-- **Community Engagement**: Encourage interaction through social media channels and frequent updates about services or blog posts (if applicable).
+Ensured that frequent users can easily navigate to the sections they visit most often.
+Tested the functionality of the random reference number generator to ensure it consistently works as intended.
 
 ### Lighthouse
 Used Chrome Developer Tools Lighthouse to test site performance, best practices, and accessibility. 
@@ -284,18 +282,23 @@ Used Chrome Developer Tools Lighthouse to test site performance, best practices,
 ![Image Alt]()
 
 ### Solved Bugs  
+Flipping Card Not Working: Fixed an issue where the flipping card would not display the back content properly.
+Custom Modal Opacity Issue: Resolved a bug where the custom modal was not appearing with the correct opacity, affecting visibility.
+Accepting Number in Card Number: Corrected the input validation to ensure only numerical values are accepted in the card number field.
+Expiry Date Not Accepting Less Than Current Year: Fixed the validation logic to ensure that the expiry date cannot be set to a year earlier than the current year.  
+
 I wanted to bring to your attention an ongoing issue related to my GitHub account that is affecting the visibility of my P-1 project. Despite having made 20 commits (please find the enclosed screenshot), the page is still not accessible to tutors, mentors, or yourself. This is the same issue we encountered when I initially submitted the project.  
 
 During a recent tutoring session with Sara, we discussed this problem, and she suggested that I work from a new GitHub profile. Consequently, I transitioned my work from my previous profile (param155) to a new one (Purohit1999). Unfortunately, this means that the commits made under my old profile are not reflected on my new one. Additionally, I primarily use VS Code for my development work due to the slow performance of Gitpod, which significantly impacts my efficiency.  
 
-It appears that there might be a configuration issue with my student account on the Code Institute platform. My mentor also believes that this is the case, as the project remains inaccessible despite being public. I kindly request that you liaise with the appropriate team at Code Institute to resolve this matter, as I have invested a considerable amount of time in ensuring that my P-1 project is both attractive and responsive.   
+It appears that there might be a configuration issue with my student account on the Code Institute platform. My mentor also believes that this is the case, as the project remains inaccessible despite being public. I kindly request that you liaise with the appropriate team at Code Institute to resolve this matter, as I have invested a considerable amount of time in ensuring that my P-1-2 project is both attractive and responsive.   
 ![Image Alt]()      
 - **Custom Modal Opacity Issue**: Fixed by adjusting CSS properties.
 - **Footer Social Media Not Centered**: `justify-content: center;` applied.    
   ![Image Alt]()
 
 ### Unit Testing
-- **JavaScript Functions**: Ensured all custom scripts work as expected.
+JavaScript Functions: Ensured all custom scripts work as expected, particularly the random reference number generation and smooth scroll functions.
 
 ### Further Testing
 - **Usability Testing**: Conduct tests to ensure ease of navigation, especially for first-time visitors.
@@ -306,28 +309,60 @@ It appears that there might be a configuration issue with my student account on 
   ![Image Alt]()
   ![Image Alt]()
 
-## File Overview
+## File Overview  
 
 ### index.html
 This file contains the structure and content of the webpage. Key sections include:
-- **Head**: Contains metadata, links to Bootstrap for styling, and a FontAwesome kit for icons.
-- **Navbar**: A responsive navigation bar with links to key sections (Home, Services, Contact).
-- **Hero Section**: Introduces the Full Stack Developer and includes a call-to-action button.
-- **Services Section**: Lists key services with brief descriptions and links to more detailed pages.
-- **Black Box Section**: A prominent call-to-action inviting visitors to discuss their project ideas.
-- **Work Section**: Showcases specific services with cards that provide more detailed descriptions.
-- **Testimonials**: A carousel of client testimonials to build trust with new and returning visitors.
-- **Contact Section**: Provides a contact form and details about how to get in touch, along with an About Us section.
-- **Footer**: Contains quick links, a brief about the developer, and social media icons for connection.
+
+- **Head Section**:
+  - **Meta Tags**: Contains the viewport meta tag to ensure responsive design across devices.
+  - **Title**: Sets the title of the webpage as "Credit Card Form".
+  - **Google Fonts**: Links to the Roboto Mono font from Google Fonts.
+  - **Stylesheet Link**: Links to the external stylesheet (`style.css`) that provides the webpage’s styling.
+  - **External API Scripts**: Includes the Axios library for making HTTP requests.
+
+- **Body Section**:
+  - **Wrapper Div**: Acts as a container for all content, centering it on the page and providing a structured layout.
+  - **Credit Card Display**:
+    - **Card Front**: Displays the card branding (chip and Visa logo), the card number in four separate groups, the cardholder's name, and the expiration date.
+    - **Card Back**: Shows the CVV field, a black magnetic strip, and the Visa logo.
+  - **Payment Information Section**: Contains a form where users can enter their credit card details, including the card number, cardholder’s name, expiration date, CVV, and email for OTP.
+  - **OTP Section**: Allows users to enter an OTP (One-Time Password) sent to their email.
+  - **Buttons**: Provides a button to send the OTP and a button to submit the payment.
+  - **Landing Page**: A hidden section that displays a confirmation message and reference number once the transaction is complete.
+  
+- **Script Section**:
+  - **Script.js**: Links to the JavaScript file that handles the functionality of the form, such as form validation and interaction with the API for OTP.
 
 ### style.css
 This file provides the styling for the webpage. Key styles include:
-- **Fonts**: The webpage uses the "Roboto" font family.
-- **Hero Section**: Custom styles for background image, text positioning, and the glowing button effect.
-- **Responsive Design**: Media queries ensure that the site looks good on different screen sizes.
-- **Banner Section**: Styles the service buttons and their hover effects.
-- **Card Components**: Ensures consistent card layout with hover effects for service offerings.
-- **Footer**: Styles for footer sections including social media icons and responsive adjustments.
+
+- **Global Styles**:
+  - **Reset Styles**: Ensures consistent padding, margins, and box-sizing across all elements.
+  - **Body Styles**: Sets a light blue background color, centers content, and adjusts padding for different screen sizes.
+  
+- **Wrapper Styles**: 
+  - Defines the layout and appearance of the wrapper that contains the entire content, including background color, padding, border radius, and width constraints.
+
+- **Credit Card Styles**:
+  - **Card Container**: Styles the credit card element, including its size, 3D perspective, and transitions for flipping between the front and back.
+  - **Card Front and Back**: Applies background gradients, positions elements like the chip, Visa logo, card number, and other details, and sets styles for text and logos.
+
+- **Payment Form Styles**:
+  - **Form Layout**: Styles form elements, including labels and input fields. Adjustments include font size, border styling, padding, and margin.
+  - **Date and CVV Fields**: Styles the date and CVV fields, ensuring they are aligned and appropriately spaced.
+  - **OTP Section**: Customizes the appearance of the OTP input and related buttons.
+
+- **Landing Page Styles**:
+  - **Layout and Typography**: Centers content, adjusts text size, and adds a shadow to create a card-like appearance for the confirmation message.
+  - **Home Button**: Styles the button for returning to the home screen, including hover effects.
+
+- **Button Styles**:
+  - **Send OTP Button**: Green background with white text, including hover effects.
+  - **Submit Payment Button**: Blue background with white text, also with hover effects.
+
+- **Media Queries**:
+  - **Responsive Design**: Adjusts the layout and font sizes based on the screen width, ensuring the webpage is usable on both small and large screens.  
 
 ## Deployment
 
