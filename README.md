@@ -243,15 +243,14 @@ Touch Interactivity: Elements like buttons and links are appropriately spaced to
 
 ### Desktops
 Full-Width Layout: The website uses the full width of the screen, offering a more immersive experience. The content is well-distributed across the screen, enhancing readability.
-Enhanced Visuals: High-quality images and backgrounds are displayed in full resolution, making the site visually appealing on larger screens.
+Enhanced Visuals: High-quality backgrounds are displayed in full resolution, making the site visually appealing on larger screens.
 
 ## Features
-Random Reference Number Generation on Landing Page: A unique reference number is generated each time a user lands on the page, providing a personalized experience.
-Return to Home Functionality: Users can easily return to the home page from any section of the website, enhancing navigation and user flow.
-Interactive Cards: Service offerings are presented as interactive cards that flip on hover, providing additional details in an engaging way.
-Smooth Scrolling: The site implements smooth scrolling for an enhanced navigation experience, ensuring that users can move between sections fluidly.
-Responsive Design: The website is fully responsive, ensuring that it looks and functions well on all devices, from smartphones to desktops.
-Contact Form: A fully functional contact form is included, allowing users to easily get in touch with the developer for inquiries or feedback.
+**Random Reference Number Generation on Landing Page** : A unique reference number is generated each time a user lands on the page, providing a personalized experience.  
+**Return to Home Functionality** : Users can easily return to the home page from any section of the website, enhancing navigation and user flow.  
+**Interactive Cards** : Service offerings are presented as interactive cards that flip on hover, providing additional details in an engaging way.  
+**Smooth Scrolling** : The site implements smooth scrolling for an enhanced navigation experience, ensuring that users can move between sections fluidly.  
+**Responsive Design** : The website is fully responsive, ensuring that it looks and functions well on all devices, from smartphones to desktops.    
 
 ### Features Left to Implement
 User Authentication: Future versions will include user login functionality, allowing users to save their preferences and track interactions.
