@@ -235,7 +235,7 @@ Intuitive Navigation: A clean, user-friendly navigation bar makes it easy to acc
 
 ### Mobiles
 Adaptive Layout: The design collapses elements to fit smaller screens, providing a touch-friendly interface and ensuring that content is easily readable.
-Simplified Navigation: A hamburger menu is used to keep the navigation compact and accessible, making it easier for users to browse through the site on mobile
+Simplified Navigation: A hamburger menu is used to keep the navigation compact and accessible, making it easier for users to browse through the site on mobile.
 
 ### Tablets
 Optimized Grid System: The layout adjusts to utilize the larger screen space efficiently, displaying content in a grid format that is both visually appealing and functional.
@@ -256,7 +256,7 @@ Contact Form: A fully functional contact form is included, allowing users to eas
 ### Features Left to Implement
 User Authentication: Future versions will include user login functionality, allowing users to save their preferences and track interactions.
 Advanced Analytics: Integration of detailed analytics to track user behavior and optimize content based on user interactions.
-Multilingual Support: Adding support for multiple languages to cater to a global audience
+Multilingual Support: Adding support for multiple languages to cater to a global audience.
 
 ## Technologies Used
 - HTML5: Structure and content of the website.
