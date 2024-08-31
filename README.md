@@ -116,7 +116,43 @@ From a developer and business perspective, the goals include:
 
 The typography is clean and modern, using a sans-serif font family that enhances readability across all devices. The font hierarchy is well-defined, with larger, bold headers and subheaders guiding the user through the content, while the body text is kept at a comfortable reading size. This ensures a cohesive and consistent look throughout the web page.
 
+## User Stories  
+
 ## User Stories
+
+### 1. As a User, I want to enter my credit card information securely.
+- **Description**: The user can input their credit card details (card number, cardholder name, expiration date, and CVV) in a form that is visually linked to a dynamic credit card display, providing a secure and user-friendly experience.
+- **Acceptance Criteria**:
+  - The user sees a visual representation of the card details as they type.
+  - The form fields are clearly labeled and easy to understand.
+  - Input validation ensures that all fields are correctly filled before submission.
+
+### 2. As a User, I want to receive an OTP to verify my transaction.
+- **Description**: After entering their credit card details, the user can request an OTP (One-Time Password) to be sent to their email, adding an extra layer of security to the transaction process.
+- **Acceptance Criteria**:
+  - The user can enter their email address to receive the OTP.
+  - The user receives the OTP via email after clicking the "Send OTP" button.
+  - The OTP field becomes visible, allowing the user to enter the code for verification.
+
+### 3. As a User, I want to submit my payment details and complete the transaction.
+- **Description**: The user can submit their payment information along with the OTP to finalize the transaction, after which they receive a confirmation with a reference number.
+- **Acceptance Criteria**:
+  - The user must input the OTP before submitting the payment.
+  - Upon submission, the user sees a confirmation message indicating that the transaction was successful.
+  - The user receives a unique reference number that they can save for future reference.
+
+### 4. As a User, I want to be able to return to the home page after completing my transaction.
+- **Description**: After completing a transaction, the user is presented with an option to return to the home page to start a new transaction or exit.
+- **Acceptance Criteria**:
+  - The user sees a "Return to Home" button on the transaction completion page.
+  - Clicking the button takes the user back to the initial form, allowing them to initiate another payment if needed.
+
+### 5. As a User, I want the webpage to be responsive and accessible on any device.
+- **Description**: The user can access and use the payment form seamlessly across different devices, including mobile phones, tablets, and desktops.
+- **Acceptance Criteria**:
+  - The layout adjusts appropriately on different screen sizes without losing functionality or readability.
+  - The buttons and input fields remain easily accessible and usable on touch devices.
+
    ![Image Alt]()   
 
 ## Imagery
