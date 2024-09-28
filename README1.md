@@ -4,7 +4,7 @@
 
 🌐 Website Link: [Credit Card Form](https://purohit1999.github.io/P-2/)
 
-Welcome to the Credit Card Form project! This repository contains the source code and documentation for an interactive credit card form. This README provides an overview of the project, including its features, technologies used, testing, deployment, and more.
+Welcome to the Credit Card Form project! This repository contains the source code and documentation for an interactive credit card form. This README provides an overview of the project, including its features, technologies used, testing, deployment, and more..
 
 ## 📋 Table of Contents
 1. [🔍 Project Overview](#project-overview)
