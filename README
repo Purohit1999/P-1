@@ -1,0 +1,122 @@
+Credit Card Form : 
+Overview :
+This project is a dynamic and interactive credit card form built with HTML, CSS, and JavaScript. The Credit Card Form is designed to provide users with a visually appealing and user-friendly interface for entering their credit card details. It features real-time updates on a card preview, interactive animations, input validation, and formatting to ensure a smooth and intuitive user experience. 
+
+Features :
+Responsive Design: The form is fully responsive, ensuring it looks great on all devices, from desktops to smartphones.
+Interactive Card Preview: As users input their card details, the card preview updates in real-time, reflecting the entered data.
+Card Flip Animation: When users focus on the CVV input field, the card flips to show the back side, simulating the real-world experience of entering the CVV.
+Input Masking and Formatting: The form automatically formats the credit card number into groups of four digits and validates the CVV and expiration date inputs.
+Real-Time Validation: Basic validation is implemented to provide instant feedback on the inputs, ensuring that users enter the correct format.
+
+Required Attribute:
+
+Added required to each input field to ensure that the form cannot be submitted without filling in all the fields.
+Example: <input type="text" id="card-number" placeholder="1234 1234 1234 1234" maxlength="19" required />
+Form Action and Method:
+
+Added action="/process_payment" and method="POST" to the form element.
+This specifies that the form data will be sent to the /process_payment endpoint using the POST method when the form is submitted.
+These modifications ensure that users must fill in all required fields before submitting the form, and the form will be processed through the specified action and method.
+
+Card Number Formatting:
+
+Updated cardNumberInput to format as four groups of four digits.
+Validates that the card number is 16 digits long.
+Card Back Issue:
+
+Fixed the issue of the card not flipping by ensuring CVV is correctly displayed on the back of the card.
+Input Validation:
+
+Added validation for card number, card holder name, and expiry date.
+Alerts users to enter valid values if they do not match the required formats.
+OTP Functionality:
+
+Set the OTP to a fixed six-digit number "123456".
+Added validation for OTP input during form submission.
+Landing Page:
+
+Added a home button to return to the main form.
+Resets the form and hides the landing page when the home button is clicked.
+
+Files :
+1. index.html
+This file contains the HTML structure of the credit card form. It includes:
+
+A card preview section with front and back sides.
+Input fields for card number, cardholder name, expiration date, and CVV.
+A reference to external styles (style.css) and scripts (script.js).
+2. style.css
+This file contains the styles for the form, including:
+
+Global Styles: Basic styles for fonts, body background, and form layout.
+Card Styles: Styling for the credit card preview, including the front and back views, branding, card number, and details.
+Form Styles: Enhanced input fields with focus effects, validation styling, and responsive design to ensure the form adapts well across different screen sizes.
+3. script.js
+This file contains JavaScript code to add interactivity and dynamic behavior to the form, including:
+
+Real-Time Input Handling: Updates the card preview in real-time as the user types.
+Card Number Formatting: Automatically formats the card number into groups of four digits.
+Card Flip Animation: Flips the card to the back when the CVV input is focused.
+Expiration Date Formatting: Ensures the expiration date is in the correct MM/YY format.
+Basic Input Validation: Restricts input to appropriate characters (e.g., numbers for card number and CVV).
+
+4. test.js
+
+Explanation of Tests:
+
+Card Number Input Formatting:
+
+Verifies that the card number is formatted correctly with spaces after every 4 digits.
+Ensures that the card number is displayed correctly on the card.
+
+Card Holder Name Input:
+
+Checks that the cardholder's name is correctly transformed to uppercase and displayed on the card.
+
+Card Validity Input Formatting:
+
+Ensures that the expiration date is formatted correctly as "MM/YY".
+
+CVV Input Masking and Card Flip:
+
+Verifies that the CVV is masked correctly and the card flips when the CVV field is focused.
+
+Window onload Clears Inputs:
+
+Checks that all input fields are cleared when the window is loaded.
+
+How to Use :
+Clone or Download the Repository:
+
+Clone the repository using git clone <repository-url>.
+Or download the ZIP file and extract it.
+
+Open index.html:
+
+Open the index.html file in a web browser to view and interact with the form.
+Enter Card Details:
+
+Enter the card number, cardholder name, expiration date, and CVV.
+Watch the card preview update in real-time as you type.
+Experience the Animations:
+
+Focus on the CVV input field to see the card flip and reveal the back.
+
+Customization :
+
+Branding: Replace the visa.png and chip.png images in the project with your own branding assets.
+Styles: Modify the style.css file to change the look and feel of the form.
+JavaScript Logic: Enhance or adjust the validation rules and interactive behavior by editing the script.js file.
+
+Dependencies :
+Google Fonts: The project uses the "Roboto Mono" font from Google Fonts.
+
+License :
+This project is open-source and free to use. You can modify, distribute, or use it in your projects as you see fit.
+
+Contributing : 
+
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to create a pull request or open an issue.
+
+
