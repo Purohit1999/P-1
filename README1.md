@@ -235,31 +235,103 @@ The imagery on the webpage has been carefully selected and designed to contribut
 
 
 ## 📐 Wireframes
-[Content remains the same]
+Wireframes are included as part of the design documentation below :  
+[Here Link](https://app.diagrams.net/)  
+
+[Here Link](https://balsamiq.com/)  
+
+## 📐 Wireframes
+
+Wireframes provide a visual representation of the webpage layout and structure, offering a blueprint for the user interface and how different elements are positioned across different device views. These wireframes were created during the design phase to ensure an intuitive, responsive, and user-friendly experience.
+
+Wireframes are included as part of the design documentation below:
+
+- [Wireframe Link using diagrams.net](https://app.diagrams.net/)
+- [Wireframe Link using Balsamiq](https://balsamiq.com/)
+
+The wireframes demonstrate the layout for **Mobile**, **Tablet**, and **Desktop** views, showing how the responsive design ensures a consistent experience across different devices.
+
+---
 
 ## 🗺️ 2D Skeleton Models
-[Content remains the same]
+
+The following are the 2D skeleton models of the webpage design across various screen sizes.
 
 ### 📱 Mobile View
-[Content remains the same]
+![Mobile Wireframe](assets/images/mobile%20view%20.png)
 
-### 📱💻 Tablet View
-[Content remains the same]
+In the mobile view, the layout is designed to be compact and easily navigable, focusing on a vertical scroll experience. The credit card form fields are stacked for easy readability and interaction, with a dynamic credit card preview placed prominently above the form fields for real-time feedback.
+
+### 💻 Tablet View
+![Tablet Wireframe](assets/images/tablet%20view%20.png)
+
+In the tablet view, the layout adjusts to take advantage of the larger screen size while maintaining simplicity. The credit card form is aligned alongside the card preview, offering a side-by-side view for better spatial orientation.
 
 ### 🖥️ Desktop View
-[Content remains the same]
+![Desktop Wireframe](assets/images/desktop%20view.png)
+
+In the desktop view, the layout is expanded to provide a spacious and visually appealing interface. The form and the credit card preview are positioned for easy interaction, with sufficient spacing to maintain clarity and balance between elements.
+
+---
+
+### 🔧 Design Process:
+The wireframes reflect a clear focus on:
+- **User Experience**: The placement of form elements, buttons, and credit card previews is designed to guide the user seamlessly through the input process.
+- **Responsiveness**: Each wireframe adapts fluidly to different screen sizes, ensuring the form is functional and intuitive on mobile, tablet, and desktop devices.
+- **Visual Hierarchy**: The wireframes highlight key areas of interaction, with a prominent credit card preview to enhance user feedback during form submission.
+
+These wireframes served as the foundation for building a responsive, interactive, and user-friendly credit card form.
+
 
 ## 🎭 Design Choices
-[Content remains the same]
+
+The design of the webpage is focused on creating an intuitive, responsive, and visually appealing user experience across various devices. Each design choice is made with the goal of ensuring usability, readability, and interaction, while maintaining a modern and professional aesthetic.
+
+---
 
 ### 📱 Mobiles
-[Content remains the same]
+
+The mobile design focuses on delivering a seamless and efficient user experience, even on smaller screens. Given the limited screen real estate, the layout emphasizes simplicity and ease of use.
+
+- **Single-column Layout**: All elements are vertically aligned to make it easy for users to scroll through and complete the credit card form without distractions.
+- **Form Fields**: Form inputs are designed with large, touch-friendly areas to minimize input errors and enhance the ease of interaction.
+- **Credit Card Preview**: Positioned prominently at the top of the screen, the credit card preview updates in real-time as the user fills in the form, giving instant feedback.
+- **Minimalist Navigation**: Navigation is kept simple, reducing distractions, and ensuring that the form fields and submit button remain the focus.
+- **Responsive Typography**: Font sizes and input field padding are adjusted for readability and accessibility, ensuring the text remains clear on small screens.
+
+---
 
 ### 📱💻 Tablets
-[Content remains the same]
+
+The tablet design takes advantage of the larger screen space, offering a more spacious layout while maintaining the simplicity required for touch interactions.
+
+- **Two-column Layout**: Where possible, the credit card preview and form fields are displayed side-by-side to make efficient use of the larger display, reducing the need for excessive scrolling.
+- **Larger Form Fields**: Input fields are slightly larger and spaced out for better readability and interaction, ensuring an easy and comfortable input experience.
+- **Interactive Feedback**: The card preview updates alongside the form fields in real-time, providing visual confirmation of the details entered by the user.
+- **Enhanced Navigation**: The navigation and buttons are more prominent, with increased padding for easier touch interaction without overwhelming the user.
+
+---
 
 ### 🖥️ Desktops
-[Content remains the same]
+
+The desktop design is geared towards providing a robust, visually rich experience, making use of the larger screen real estate while maintaining an intuitive layout.
+
+- **Side-by-Side Layout**: The form is positioned to the left, with the credit card preview on the right, creating a clean, organized look. This layout allows users to see both the form and the real-time card preview simultaneously, improving the overall user experience.
+- **Fixed Width Containers**: To prevent content from stretching too wide, fixed-width containers are used, ensuring that the layout remains centered and balanced.
+- **Whitespace and Spacing**: Generous use of whitespace and padding around form elements and buttons ensures that the design does not feel cluttered, improving readability and focus.
+- **Hover Effects and Visual Feedback**: On desktops, hover effects are implemented for buttons and form fields, providing additional feedback to users during interaction. This enhances the overall usability by making interactive elements more discoverable.
+- **Typography and Iconography**: On larger screens, slightly smaller font sizes are used, as desktop screens are typically viewed at a greater distance. Icons are used sparingly to provide visual cues without overwhelming the interface.
+
+---
+
+### 🎨 Overall Design Considerations:
+- **Consistency**: The design remains consistent across all devices, ensuring that users have a familiar experience regardless of whether they are on mobile, tablet, or desktop.
+- **Performance Optimization**: All design elements, including images, icons, and fonts, are optimized to ensure fast load times and smooth performance across devices.
+- **Accessibility**: Design choices follow accessibility best practices, including appropriate contrast ratios, large clickable areas, and responsive typography to ensure the webpage is usable for all users.
+- **Modern Aesthetic**: The clean, minimalist design adheres to modern web standards, providing a professional and trustworthy appearance, particularly important for a credit card form.
+
+The design choices reflect a strong emphasis on user experience, usability, and performance, ensuring that the webpage is functional and visually appealing across all device types.
+
 
 ## ✨ Features
 ### Responsive Design: 
