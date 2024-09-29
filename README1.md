@@ -115,6 +115,7 @@ The color scheme of the webpage has been thoughtfully designed to ensure both vi
 
 This thoughtful color scheme enhances both the aesthetic appeal and usability of the webpage, creating a pleasant experience for users.
 
+---
 
 ## 🖋️ Typography
 
@@ -235,13 +236,6 @@ The imagery on the webpage has been carefully selected and designed to contribut
 
 
 ## 📐 Wireframes
-Wireframes are included as part of the design documentation below :  
-[Here Link](https://app.diagrams.net/)  
-
-[Here Link](https://balsamiq.com/)  
-
-## 📐 Wireframes
-
 Wireframes provide a visual representation of the webpage layout and structure, offering a blueprint for the user interface and how different elements are positioned across different device views. These wireframes were created during the design phase to ensure an intuitive, responsive, and user-friendly experience.
 
 Wireframes are included as part of the design documentation below:
@@ -331,6 +325,7 @@ The desktop design is geared towards providing a robust, visually rich experienc
 - **Modern Aesthetic**: The clean, minimalist design adheres to modern web standards, providing a professional and trustworthy appearance, particularly important for a credit card form.
 
 The design choices reflect a strong emphasis on user experience, usability, and performance, ensuring that the webpage is functional and visually appealing across all device types.
+
 ---
 
 ## ✨ Features
@@ -344,6 +339,7 @@ When users focus on the CVV input field, the card flips to show the back side, s
 The form automatically formats the credit card number into groups of four digits and validates the CVV and expiration date inputs.
 ### Real-Time Validation: 
 Basic validation is implemented to provide instant feedback on the inputs, ensuring that users enter the correct format.
+
 ---
 ### 🚀 Features Left to Implement
 
@@ -389,9 +385,8 @@ Although the current version of the dynamic credit card form is fully functional
 #### 🌐 Social Login Integration
 - **Social Media Integration**: Allow users to log in or authenticate via their social media accounts (e.g., Google, Facebook) to auto-fill details and streamline the checkout process.
 
----
-
 These features will significantly enhance the functionality, security, and user experience of the credit card form, making it more robust and flexible for different use cases and user needs.
+
 ---
 
 ## 🛠️ Technologies Used
@@ -572,7 +567,6 @@ Further testing will focus on improving accessibility and adding more detailed e
 ### Summary
 
 By leveraging BDD, TDD, unit testing through `test.js`, and a custom `404.html` page, the project ensures a high level of reliability and user satisfaction. Manual testing across devices and browsers further guarantees that the credit card form performs consistently and efficiently in real-world scenarios.
----
 
 ## 📁 File Overview  
 ### 📄 index.html
@@ -620,13 +614,11 @@ Ensures that the expiration date is formatted correctly as "MM/YY".
 
 CVV Input Masking and Card Flip:
 
-Verifies that the CVV is masked correctly and the card flips when the CVV field is focused.
+Verifies that the CVV is masked correctly and the card flips when the CVV field is focused.  
 
-Window onload Clears Inputs:
-
-Checks that all input fields are cleared when the window is loaded.
----
-
+Window onload Clears Inputs:  
+Checks that all input fields are cleared when the window is loaded.   
+  
 ## 🚀 Deployment
 ### 🌐 GitHub Pages
 The project was deployed to GitHub Pages using the following steps:
@@ -653,7 +645,6 @@ Forking the GitHub Repository allows you to make a copy of the original reposito
 7. Press Enter. Your local clone will be created.
 
 ## 🔧 GitPod and GitHub Deployment Issues Resolved
-## GitPod and GitHub Deployment Issues Resolved  
 Over the past three days, I have been diligently working on my first project, which is now complete and functioning perfectly in Visual Studio. However, when attempting to share my project with the online tutors for review, they are unable to access my GitHub profile. This issue is severely hampering my progress as I am unable to receive the necessary feedback and move forward to the JavaScript lessons.
 
 Despite multiple attempts to resolve this issue, including extensive troubleshooting on SLACK and seeking help from the online tutors, the problem remains unresolved. I am now reaching out to you as my last resort, hoping for a swift resolution.
