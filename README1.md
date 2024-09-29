@@ -625,53 +625,74 @@ Verifies that the CVV is masked correctly and the card flips when the CVV field 
 Window onload Clears Inputs:
 
 Checks that all input fields are cleared when the window is loaded.
+---
 
 ## 🚀 Deployment
-[Content remains the same]
-
 ### 🌐 GitHub Pages
-[Content remains the same]
+The project was deployed to GitHub Pages using the following steps:
+1. Log in to GitHub and locate the GitHub Repository.
+2. At the top of the Repository, locate the "Settings" Button on the menu.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
 
 ### 🍴 Forking the GitHub Repository
-[Content remains the same]
+Forking the GitHub Repository allows you to make a copy of the original repository on your GitHub account. Steps to fork the repository:
+1. Log in to GitHub and locate the GitHub Repository.
+2. At the top of the Repository, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
 
 ### 💻 Making a Local Clone
-How to Use :
-Clone or Download the Repository:
-
-Clone the repository using git clone <repository-url>.
-Or download the ZIP file and extract it.
-
-Open index.html:
-
-Open the index.html file in a web browser to view and interact with the form.
-Enter Card Details:
-
-Enter the card number, cardholder name, expiration date, and CVV.
-Watch the card preview update in real-time as you type.
-Experience the Animations:
-
-Focus on the CVV input field to see the card flip and reveal the back.
+1. Log in to GitHub and locate the GitHub Repository.
+2. Under the repository name, click "Clone or download".
+3. Copy the link under "Clone with HTTPS".
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+7. Press Enter. Your local clone will be created.
 
 ## 🔧 GitPod and GitHub Deployment Issues Resolved
-[Content remains the same]
+## GitPod and GitHub Deployment Issues Resolved  
+Over the past three days, I have been diligently working on my first project, which is now complete and functioning perfectly in Visual Studio. However, when attempting to share my project with the online tutors for review, they are unable to access my GitHub profile. This issue is severely hampering my progress as I am unable to receive the necessary feedback and move forward to the JavaScript lessons.
+
+Despite multiple attempts to resolve this issue, including extensive troubleshooting on SLACK and seeking help from the online tutors, the problem remains unresolved. I am now reaching out to you as my last resort, hoping for a swift resolution.
+
+The main issues I am encountering are as follows:
+
+**GitHub Profile Visibility**: My online tutors are unable to view my GitHub profile and the project repository, which is essential for them to review my work.
+
+**GitPod Accessibility**: There seem to be issues with GitPod that are preventing my project from being accessed and reviewed online.
+
+Given that I have already invested a considerable amount of time and effort into resolving these issues without success, I kindly request your immediate assistance in addressing and resolving these problems. It is crucial for me to submit my project promptly and continue with the coursework as scheduled.
+
+Please let me know if you require any additional information or access details to diagnose and fix the issues. Your prompt attention to this matter would be greatly appreciated. 
 
 ## 🙏 Credit
 Branding: Replace the visa.png and chip.png images in the project with your own branding assets.
 Styles: Modify the style.css file to change the look and feel of the form.
 JavaScript Logic: Enhance or adjust the validation rules and interactive behavior by editing the script.js file.
+- **Bootstrap 4**: Used throughout the project to make the site responsive using the Bootstrap Grid System.
+- **MDN Web Docs**: For Pattern Validation code. Code was modified to fit a UK layout.
 
 ### 🖼️ Media
-[Content remains the same]
+- All Images were created by the developer using Bing's free AI tool.
+- Free Images source:
+  - [Bing Image](https://www.bing.com/images/create/)
 
 ### 🔤 Free Fonts source
-[Content remains the same]
+- [Roboto](https://fonts.google.com/specimen/Roboto)
+- [Font Awesome](https://fontawesome.com/kits)
 
 ### 💻 Code
-[Content remains the same]
+- **Bootstrap** components and **Font Awesome** icons.
+  - [Get Bootstrap](https://getbootstrap.com/)
+  - [Google Fonts - Roboto](https://fonts.google.com/specimen/Roboto)
 
 ## 📝 Content
-[Content remains the same]
+All content was written by the developer. Psychological properties of colors text in the README.md was found on the Colour Affects website.
 
 ## 👏 Acknowledgements
-[Content remains the same]
+- My Mentor for continuous helpful feedback.
+- Tutor support at Code Institute for their support.
+- EKC college teacher Rachel Furlong's help and support.
