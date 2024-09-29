@@ -439,31 +439,140 @@ This project incorporates various frameworks, libraries, and tools to enhance th
 
 
 ## 🧪 Testing
-[Content remains the same]
+
+Testing is a crucial part of the development process, ensuring that the webpage is functional, user-friendly, and free of bugs. This project utilizes various testing methodologies and tools to validate both the frontend logic and user interface behavior.
+
+---
+
+### ⚙️ Testing Principles
+
+The testing process followed key principles to ensure reliability and maintainability of the code:
+
+- **Test Early and Often**: Testing was conducted continuously throughout development to identify issues as early as possible, ensuring a smoother development process.
+- **Automation Where Possible**: Automated tests were utilized to minimize manual testing time and catch regressions when making updates.
+- **User-Centered Testing**: Tests were designed from the perspective of the end-user to ensure a seamless and intuitive user experience.
+
+---
+
+### 🧑‍💻 Behavior-Driven Development (BDD)
+
+BDD was employed to focus on the user’s experience, writing test scenarios based on how a user would interact with the credit card form. By using BDD principles, tests were written in plain language and included:
+
+- **Feature descriptions**: Written to explain the intended behavior of the webpage (e.g., "As a user, I want to see real-time updates of my credit card details when I input information").
+- **Test scenarios**: Scenarios were created to simulate user interactions, such as entering valid or invalid credit card details, to ensure the form behaves as expected.
+
+BDD ensures that both developers and non-technical stakeholders understand the purpose and outcome of each test.
+
+---
+
+### 🔧 Test-Driven Development (TDD)
+
+Test-Driven Development (TDD) was used to write tests before the actual implementation. This helped in defining the expected behavior of the functions and ensuring that new features didn’t break existing functionality.
+
+- **Process**: 
+  1. Write a test for a new feature.
+  2. Run the test to ensure it fails initially (since the feature hasn’t been implemented yet).
+  3. Write code to pass the test.
+  4. Refactor the code to improve quality while ensuring the test still passes.
+  
+TDD helped in maintaining a clean and functional codebase by ensuring each feature was thoroughly tested before being fully developed.
+
+---
+
+### 🧪 `test.js` File
+
+The `test.js` file contains unit tests that verify the core JavaScript functionalities, such as:
+
+- **Input Validation**: Tests to ensure that the credit card form fields accept only valid inputs (e.g., proper credit card number format, valid expiration date, etc.).
+- **Real-Time Updates**: Verifying that changes in the form fields are accurately reflected in the credit card preview in real-time.
+- **Error Handling**: Ensuring that the form provides appropriate error messages when users submit incorrect or incomplete data.
+
+These unit tests help maintain the integrity of the core functionality of the webpage and prevent bugs from being introduced during future updates.
+
+---
+
+### ❌ `404.html` Page
+
+A `404.html` page was created to handle cases where users navigate to an invalid URL. The 404 page ensures:
+
+- **User-Friendly Error Handling**: The page provides a clear message that the requested page could not be found and suggests a way to return to the homepage.
+- **Custom Design**: The 404 page is styled consistently with the rest of the website to provide a seamless user experience.
+- **Redirection**: The page includes links or buttons that redirect users back to the main content, improving navigation and reducing user frustration.
+
+By implementing a custom `404.html` page, the project enhances the overall user experience, even in the case of incorrect URLs or missing content.
+
+---
 
 ### 🔍 W3C Markup Validator
-[Content remains the same]
+The HTML of the webpage was tested using the **W3C Markup Validator** to ensure that the code adheres to web standards and is free of syntax errors.
+
+![image](link-to-w3c-validation-image)
 
 ### 🎨 W3C CSS Validator
-[Content remains the same]
+The CSS code was validated using the **W3C CSS Validator** to ensure proper styling syntax and compatibility across different browsers.
+
+![image](link-to-css-validation-image)
+
+---
 
 ### 🧭 Testing User Stories from User Experience (UX) Section
-[Content remains the same]
+Each user story was tested manually to ensure the credit card form meets user expectations. Scenarios such as inputting valid/invalid credit card details, receiving real-time feedback, and responsive design were verified.
+
+![image](link-to-testing-ux-stories-image)
+
+---
 
 ### 🔦 Lighthouse
-[Content remains the same]
+Google's **Lighthouse** tool was used to assess the performance, accessibility, best practices, and SEO of the webpage. The webpage scored highly in each category, with detailed reports used to identify any areas for improvement.
+
+![image](link-to-lighthouse-image)
+
+---
 
 ### 🖱️ Manual Testing
-[Content remains the same]
+
+In addition to automated testing, extensive manual testing was conducted across different browsers (Chrome, Firefox, Edge, and Safari) and devices (desktop, tablet, mobile) to ensure:
+
+- **Responsiveness**: The webpage layout adjusts properly to various screen sizes.
+- **Form Functionality**: The credit card form accepts valid inputs and provides appropriate error messages for invalid ones.
+- **Cross-Browser Compatibility**: The design and functionality remain consistent across all modern browsers.
+- **Accessibility**: The webpage was manually checked to ensure it meets accessibility standards, with clear text, sufficient contrast, and keyboard navigation support.  
+![image](link-to-manual-testing-image)
+
+---
 
 ### 🐛 Solved Bugs
-[Content remains the same]
+During development, several bugs were identified and resolved:
+- **Input Validation**: Issues with credit card number validation were resolved to ensure proper formatting and error messages.
+- **CSS Styling**: Fixed inconsistencies in form layout on smaller screens.
+
+![image](link-to-solved-bugs-image)
+
+---
 
 ### 🧬 Unit Testing
-[Content remains the same]
+Unit tests were written in the `test.js` file to validate key functionality:
+- **Real-Time Updates**: Ensuring the credit card preview reflects input in real-time.
+- **Input Validation**: Testing for proper validation of credit card number, expiration date, and CVV.
+
+![image](link-to-unit-testing-image)
+
+---
 
 ### 🔬 Further Testing
-[Content remains the same]
+- **404.html**: A custom **404 page** was implemented to handle incorrect URLs gracefully, providing clear navigation back to the main page.
+- **TDD (Test-Driven Development)**: Tests were written before feature development, ensuring the credit card form met functionality requirements.
+- **BDD (Behavior-Driven Development)**: Tests were written based on user behavior, focusing on how users interact with the form.
+
+Further testing will focus on improving accessibility and adding more detailed error messages based on user feedback.
+
+![image](link-to-further-testing-image)
+
+---
+### Summary
+
+By leveraging BDD, TDD, unit testing through `test.js`, and a custom `404.html` page, the project ensures a high level of reliability and user satisfaction. Manual testing across devices and browsers further guarantees that the credit card form performs consistently and efficiently in real-world scenarios.
+---
 
 ## 📁 File Overview  
 ### 📄 index.html
