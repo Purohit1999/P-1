@@ -551,6 +551,26 @@ Further testing will focus on improving accessibility and adding more detailed e
 
 By leveraging BDD, TDD, unit testing through `test.js`, and a custom `404.html` page, the project ensures a high level of reliability and user satisfaction. Manual testing across devices and browsers further guarantees that the credit card form performs consistently and efficiently in real-world scenarios.
 
+Testing Matrix
+Validation Results
+Validation Type	Status	Notes
+HTML	✅ Passed (No errors or warnings)	Code validated using W3C Validator
+CSS	✅ Passed (No errors found)	Code validated using W3C CSS Validator
+JavaScript	✅ Passed (No errors or warnings)	Checked using ESLint and JSHint
+Responsiveness Test Results
+Device Type/Width	Pixel 5	Galaxy S8+	iPhone 11	iPad Mini	iPad Air	Surface Pro	Desktop 1024px+	Desktop 1280px+	iMac 1900px+
+Devices with width of 375px or more	Good	Good	Good	n/a	Good	n/a	Good	Good	Good
+Devices with width of 768px or more	n/a	Good	Good	Good	Good	Good	Good	Good	Good
+Devices with width of 1024px or more	n/a	n/a	Good	n/a	Good	Good	Good	Good	Good
+Internal Links	Good	Good	Good	Good	Good	Good	Good	Good	Good
+External Links Open in New Tab	Good	Good	Good	Good	Good	Good	Good	Good	Good
+Images not pixelated or stretched	Good	Good	Good	Good	Good	Good	Good	Good	Good
+Browser Compatibility
+Browser	Chrome	Safari	Firefox	Edge
+Appearance	Good	Good	Good	Good
+Responsiveness	Good	Good	Good	Good
+
+
 ## 📁 File Overview  
 ### 📄 index.html
 1. index.html
