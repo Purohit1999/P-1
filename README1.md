@@ -115,8 +115,6 @@ The color scheme of the webpage has been thoughtfully designed to ensure both vi
 
 This thoughtful color scheme enhances both the aesthetic appeal and usability of the webpage, creating a pleasant experience for users.
 
----
-
 ## 🖋️ Typography
 
 The typography for the webpage has been carefully selected to ensure readability, clarity, and a modern aesthetic. The combination of font styles, sizes, and weights contributes to an organized and user-friendly experience, enhancing both usability and visual hierarchy.
@@ -266,8 +264,6 @@ In the tablet view, the layout adjusts to take advantage of the larger screen si
 
 In the desktop view, the layout is expanded to provide a spacious and visually appealing interface. The form and the credit card preview are positioned for easy interaction, with sufficient spacing to maintain clarity and balance between elements.
 
----
-
 ### 🔧 Design Process:
 The wireframes reflect a clear focus on:
 - **User Experience**: The placement of form elements, buttons, and credit card previews is designed to guide the user seamlessly through the input process.
@@ -291,9 +287,8 @@ The mobile design focuses on delivering a seamless and efficient user experience
 - **Form Fields**: Form inputs are designed with large, touch-friendly areas to minimize input errors and enhance the ease of interaction.
 - **Credit Card Preview**: Positioned prominently at the top of the screen, the credit card preview updates in real-time as the user fills in the form, giving instant feedback.
 - **Minimalist Navigation**: Navigation is kept simple, reducing distractions, and ensuring that the form fields and submit button remain the focus.
-- **Responsive Typography**: Font sizes and input field padding are adjusted for readability and accessibility, ensuring the text remains clear on small screens.
+- **Responsive Typography**: Font sizes and input field padding are adjusted for readability and accessibility, ensuring the text remains clear on small screens.  
 
----
 
 ### 📱💻 Tablets
 
@@ -437,7 +432,6 @@ This project incorporates various frameworks, libraries, and tools to enhance th
 
 Testing is a crucial part of the development process, ensuring that the webpage is functional, user-friendly, and free of bugs. This project utilizes various testing methodologies and tools to validate both the frontend logic and user interface behavior.
 
----
 
 ### ⚙️ Testing Principles
 
@@ -447,7 +441,6 @@ The testing process followed key principles to ensure reliability and maintainab
 - **Automation Where Possible**: Automated tests were utilized to minimize manual testing time and catch regressions when making updates.
 - **User-Centered Testing**: Tests were designed from the perspective of the end-user to ensure a seamless and intuitive user experience.
 
----
 
 ### 🧑‍💻 Behavior-Driven Development (BDD)
 
@@ -458,7 +451,6 @@ BDD was employed to focus on the user’s experience, writing test scenarios bas
 
 BDD ensures that both developers and non-technical stakeholders understand the purpose and outcome of each test.
 
----
 
 ### 🔧 Test-Driven Development (TDD)
 
@@ -472,7 +464,6 @@ Test-Driven Development (TDD) was used to write tests before the actual implemen
   
 TDD helped in maintaining a clean and functional codebase by ensuring each feature was thoroughly tested before being fully developed.
 
----
 
 ### 🧪 `test.js` File
 
@@ -484,7 +475,6 @@ The `test.js` file contains unit tests that verify the core JavaScript functiona
 
 These unit tests help maintain the integrity of the core functionality of the webpage and prevent bugs from being introduced during future updates.
 
----
 
 ### ❌ `404.html` Page
 
@@ -496,7 +486,6 @@ A `404.html` page was created to handle cases where users navigate to an invalid
 
 By implementing a custom `404.html` page, the project enhances the overall user experience, even in the case of incorrect URLs or missing content.
 
----
 
 ### 🔍 W3C Markup Validator
 The HTML of the webpage was tested using the **W3C Markup Validator** to ensure that the code adheres to web standards and is free of syntax errors.
@@ -508,21 +497,18 @@ The CSS code was validated using the **W3C CSS Validator** to ensure proper styl
 
 ![image](link-to-css-validation-image)
 
----
 
 ### 🧭 Testing User Stories from User Experience (UX) Section
 Each user story was tested manually to ensure the credit card form meets user expectations. Scenarios such as inputting valid/invalid credit card details, receiving real-time feedback, and responsive design were verified.
 
 ![image](link-to-testing-ux-stories-image)
 
----
 
 ### 🔦 Lighthouse
 Google's **Lighthouse** tool was used to assess the performance, accessibility, best practices, and SEO of the webpage. The webpage scored highly in each category, with detailed reports used to identify any areas for improvement.
 
 ![image](link-to-lighthouse-image)
 
----
 
 ### 🖱️ Manual Testing
 
@@ -534,7 +520,6 @@ In addition to automated testing, extensive manual testing was conducted across 
 - **Accessibility**: The webpage was manually checked to ensure it meets accessibility standards, with clear text, sufficient contrast, and keyboard navigation support.  
 ![image](link-to-manual-testing-image)
 
----
 
 ### 🐛 Solved Bugs
 During development, several bugs were identified and resolved:
@@ -543,7 +528,6 @@ During development, several bugs were identified and resolved:
 
 ![image](link-to-solved-bugs-image)
 
----
 
 ### 🧬 Unit Testing
 Unit tests were written in the `test.js` file to validate key functionality:
@@ -552,7 +536,6 @@ Unit tests were written in the `test.js` file to validate key functionality:
 
 ![image](link-to-unit-testing-image)
 
----
 
 ### 🔬 Further Testing
 - **404.html**: A custom **404 page** was implemented to handle incorrect URLs gracefully, providing clear navigation back to the main page.
