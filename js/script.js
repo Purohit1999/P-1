@@ -1,3 +1,6 @@
+/* jshint esversion: 8 */
+
+
 const cardNumber = document.getElementById("card-number");
 const cardHolderName = document.getElementById("card-holder-name");
 const cardNameInput = document.getElementById("card-name-input");
@@ -96,17 +99,71 @@ document.addEventListener("click", (event) => {
     }
 });
 
-// Send OTP (Email API)
+// Mock function to simulate OTP verification
+function verifyOtp(otp) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (otp === "123456") {
+                resolve("OTP Verified.");
+            } else {
+                reject("Invalid OTP. Please try again.");
+            }
+        }, 1000); // Simulate 1-second delay for verification
+    });
+}
+
+// Form Validation and Submission using async/await
+paymentForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    
+    const otp = document.getElementById("otp").value;
+    
+    try {
+        const verificationMessage = await verifyOtp(otp);
+        showPopup(verificationMessage);
+
+        // Generate random reference number
+        const refNumber = Math.random().toString(36).substring(2, 10).toUpperCase();
+        referenceNumber.textContent = refNumber;
+
+        // Show landing page
+        document.querySelector(".wrapper").style.display = "none";
+        landingPage.style.display = "block";
+    } catch (error) {
+        showPopup(error); // Handle invalid OTP
+    }
+});
+
+
+// Send OTP (Simulate API call with a Promise)
+function sendOtp(email) {
+    return new Promise((resolve, reject) => {
+        if (!email) {
+            reject("Please enter a valid email.");
+        } else {
+            // Simulate an API call with setTimeout (replace this with actual API call using fetch or axios)
+            setTimeout(() => {
+                resolve("OTP sent to your email.");
+            }, 1000); // Simulate 1-second delay
+        }
+    });
+}
+
+// Event listener for sending OTP
 otpButton.addEventListener("click", () => {
     const email = document.getElementById("email").value;
-    if (!email) {
-        showPopup("Please enter a valid email.");
-        return;
-    }
 
-    // For demonstration purposes, we'll just show a popup
-    showPopup("OTP sent to your email.");
+    // Call sendOtp and handle the result using .then and .catch
+    sendOtp(email)
+        .then(message => {
+            showPopup(message); // Show success message
+        })
+        .catch(error => {
+            showPopup(error); // Show error message
+        });
 });
+
+
 
 // Form Validation and Submission
 paymentForm.addEventListener("submit", (e) => {
@@ -160,6 +217,7 @@ function showPopup(message) {
     `;
     document.body.appendChild(popup);
 }
+
 
 // Remove popup
 function removePopup(popup) {
