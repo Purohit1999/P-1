@@ -526,7 +526,7 @@ During development, several bugs were identified and resolved:
 - **Input Validation**: Issues with credit card number validation were resolved to ensure proper formatting and error messages.
 - **CSS Styling**: Fixed inconsistencies in form layout on smaller screens.
 
-![image](link-to-solved-bugs-image)
+![image](assets/images/mobile_view.png)
 
 
 ### 🧬 Unit Testing
