@@ -507,7 +507,7 @@ Each user story was tested manually to ensure the credit card form meets user ex
 ### 🔦 Lighthouse
 Google's **Lighthouse** tool was used to assess the performance, accessibility, best practices, and SEO of the webpage. The webpage scored highly in each category, with detailed reports used to identify any areas for improvement.
 
-![image](link-to-lighthouse-image)
+![image](assets/images/lighthouse_report.png)
 
 
 ### 🖱️ Manual Testing
