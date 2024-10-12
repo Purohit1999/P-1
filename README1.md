@@ -486,7 +486,8 @@ A `404.html` page was created to handle cases where users navigate to an invalid
 - **Custom Design**: The 404 page is styled consistently with the rest of the website to provide a seamless user experience.
 - **Redirection**: The page includes links or buttons that redirect users back to the main content, improving navigation and reducing user frustration.
 
-By implementing a custom `404.html` page, the project enhances the overall user experience, even in the case of incorrect URLs or missing content.
+By implementing a custom `404.html` page, the project enhances the overall user experience, even in the case of incorrect URLs or missing content.  
+![Mobile Wireframe](assets/images/404-test.png)
 
 
 ### 🔍 W3C Markup Validator
