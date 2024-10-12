@@ -245,7 +245,9 @@ The wireframes demonstrate the layout for **Mobile**, **Tablet**, and **Desktop*
 
 ---
 
-## 🗺️ 2D Skeleton Models
+## 🗺️ 2D Skeleton Models  
+**Intial Design Sketch**  
+![Mobile Wireframe](assets/images/wireframe_sktch.jpg)  
 
 The following are the 2D skeleton models of the webpage design across various screen sizes.
 
