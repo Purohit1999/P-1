@@ -518,7 +518,7 @@ In addition to automated testing, extensive manual testing was conducted across 
 - **Form Functionality**: The credit card form accepts valid inputs and provides appropriate error messages for invalid ones.
 - **Cross-Browser Compatibility**: The design and functionality remain consistent across all modern browsers.
 - **Accessibility**: The webpage was manually checked to ensure it meets accessibility standards, with clear text, sufficient contrast, and keyboard navigation support.  
-![image](link-to-manual-testing-image)
+![image](assets/images/expiry-date-test.png)
 
 
 ### 🐛 Solved Bugs
