@@ -544,7 +544,7 @@ Unit tests were written in the `test.js` file to validate key functionality:
 
 Further testing will focus on improving accessibility and adding more detailed error messages based on user feedback.
 
-![image](link-to-further-testing-image)
+![image](assets/images/submit-test.png)
 
 ---
 ### Summary
