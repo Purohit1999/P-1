@@ -519,13 +519,15 @@ In addition to automated testing, extensive manual testing was conducted across 
 - **Cross-Browser Compatibility**: The design and functionality remain consistent across all modern browsers.
 - **Accessibility**: The webpage was manually checked to ensure it meets accessibility standards, with clear text, sufficient contrast, and keyboard navigation support.  
 ![image](assets/images/expiry-date-test.png)
+![image](assets/images/invalid-otp-test.png)
+![image](assets/images/empty-test.png)
 
 
 ### 🐛 Solved Bugs
 During development, several bugs were identified and resolved:
 - **Input Validation**: Issues with credit card number validation were resolved to ensure proper formatting and error messages.
 - **CSS Styling**: Fixed inconsistencies in form layout on smaller screens.
-
+![image](assets/images/empty-test.png)
 ![image](assets/images/mobile_view.png)
 
 
@@ -534,7 +536,7 @@ Unit tests were written in the `test.js` file to validate key functionality:
 - **Real-Time Updates**: Ensuring the credit card preview reflects input in real-time.
 - **Input Validation**: Testing for proper validation of credit card number, expiration date, and CVV.
 
-![image](link-to-unit-testing-image)
+![image](assets/images/test_js.png)
 
 
 ### 🔬 Further Testing
