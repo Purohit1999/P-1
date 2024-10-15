@@ -603,9 +603,8 @@ Card Styles: Styling for the credit card preview, including the front and back v
 Form Styles: Enhanced input fields with focus effects, validation styling, and responsive design to ensure the form adapts well across different screen sizes.
 
 ## 🧪 Test
-3. script.js  
+3. script.js
 This file contains JavaScript code to add interactivity and dynamic behavior to the form, including:
-
 Real-Time Input Handling: Updates the card preview in real-time as the user types.
 Card Number Formatting: Automatically formats the card number into groups of four digits.
 Card Flip Animation: Flips the card to the back when the CVV input is focused.
