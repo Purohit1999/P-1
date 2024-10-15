@@ -604,7 +604,7 @@ Form Styles: Enhanced input fields with focus effects, validation styling, and r
 
 ## 🧪 Test
 3. script.js  
-This file contains JavaScript code to add interactivity and dynamic behavior to the form, including:
+This file contains JavaScript code to add interactivity and dynamic behavior to the form, including:  
 
 Real-Time Input Handling: Updates the card preview in real-time as the user types.
 Card Number Formatting: Automatically formats the card number into groups of four digits.
@@ -613,7 +613,7 @@ Expiration Date Formatting: Ensures the expiration date is in the correct MM/YY 
 Basic Input Validation: Restricts input to appropriate characters (e.g., numbers for card number and CVV).
 ### 🧬 test.js  
 
-📝 DocString  
+📝 DocString
 The script.js file is well-documented using docstrings, providing detailed descriptions of the script's purpose, functionality, and how it works. Each function and event listener in the script includes a docstring, which serves as a guide for understanding what the code does and how to maintain it.
 
 What is a DocString?
