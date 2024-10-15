@@ -616,7 +616,6 @@ Basic Input Validation: Restricts input to appropriate characters (e.g., numbers
 
 Here’s how you can add a **docString** section in your `README.md`, explaining the docstring information with relevant details. I have also included some emojis for a more engaging and visually appealing section.
 
----  
 ## 📝 DocString
 
 The `script.js` file is well-documented using **docstrings**, providing detailed descriptions of the script's purpose, functionality, and how it works. Each function and event listener in the script includes a docstring, which serves as a guide for understanding what the code does and how to maintain it.
