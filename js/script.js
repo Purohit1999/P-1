@@ -1,4 +1,29 @@
 /* jshint esversion: 8 */
+/**
+ * Credit Card Payment Form Script
+ *
+ * This script handles real-time formatting, validation, and submission of a credit card payment form. 
+ * The primary features include formatting card numbers, ensuring valid cardholder names, handling expiry dates, 
+ * validating CVV and OTP inputs, and submitting the form with correct values.
+ *
+ * The script also includes form validation for inputs such as the credit card number, CVV, and OTP,
+ * and simulates OTP verification.
+ *
+ * Functions:
+ * 1. `isValidEmail(email)` - Checks if the provided email has a valid format.
+ * 2. `sendOtp(email)` - Simulates sending OTP to the provided email address if valid.
+ * 3. `verifyOtp(otp)` - Simulates OTP verification.
+ * 4. `showPopup(message)` - Displays a popup message for errors or confirmations.
+ * 5. `resetForm()` - Resets the form fields and visual elements to their default state.
+ *
+ * Event Listeners:
+ * 1. Card Number Input - Formats the card number and restricts invalid characters.
+ * 2. Card Holder Name Input - Restricts input to alphabets and spaces.
+ * 3. Expiry Date Input - Formats the expiry date as MM/YY and validates future dates.
+ * 4. CVV Input - Restricts CVV input to 3 numeric digits and displays it on the card.
+ * 5. OTP Button - Triggers OTP sending function.
+ * 6. Form Submission - Validates all fields, including OTP and CVV, before submitting.
+ */
 
 
 const cardNumber = document.getElementById("card-number");
@@ -77,7 +102,10 @@ validityInput.addEventListener("input", (e) => {
         }
     }
 });
-
+/**
+ * Handles real-time formatting and validation for the CVV input field.
+ * Limits input to 3 digits and ensures it's numeric.
+ */
 // Format and Display CVV
 cvvInput.addEventListener("input", () => {
     // Only accept digits and limit input to 3 digits
@@ -148,14 +176,23 @@ paymentForm.addEventListener("submit", (e) => {
     landingPage.style.display = "block";
 });
 
-
+/**
+ * Validates the email format.
+ * @param {string} email - The email address entered by the user.
+ * @returns {boolean} - Returns true if the email is valid, otherwise false.
+ */
 
 // Function to validate email format
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
-
+/**
+ * Simulates sending an OTP to the given email address.
+ * Displays a success or error message based on the email's validity.
+ * @param {string} email - The email address to which the OTP will be sent.
+ * @returns {Promise} - Resolves if the email is valid and OTP is sent, rejects otherwise.
+ */
 // Send OTP (Simulate API call with a Promise)
 function sendOtp(email) {
     return new Promise((resolve, reject) => {
