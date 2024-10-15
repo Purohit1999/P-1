@@ -603,6 +603,7 @@ Card Styles: Styling for the credit card preview, including the front and back v
 Form Styles: Enhanced input fields with focus effects, validation styling, and responsive design to ensure the form adapts well across different screen sizes.
 
 ## 🧪 Test
+
 3. script.js  
 This file contains JavaScript code to add interactivity and dynamic behavior to the form, including:  
 
@@ -610,9 +611,7 @@ Real-Time Input Handling: Updates the card preview in real-time as the user type
 Card Number Formatting: Automatically formats the card number into groups of four digits.
 Card Flip Animation: Flips the card to the back when the CVV input is focused.
 Expiration Date Formatting: Ensures the expiration date is in the correct MM/YY format.
-Basic Input Validation: Restricts input to appropriate characters (e.g., numbers for card number and CVV).
-### 🧬 test.js  
-
+Basic Input Validation: Restricts input to appropriate characters (e.g., numbers for card number and CVV).  
 📝 DocString
 The script.js file is well-documented using docstrings, providing detailed descriptions of the script's purpose, functionality, and how it works. Each function and event listener in the script includes a docstring, which serves as a guide for understanding what the code does and how to maintain it.
 
@@ -648,6 +647,8 @@ Docstrings act as in-code documentation, making it easier for developers to unde
 
 🧑‍💻 For Collaboration:
 With clear docstrings, multiple developers can collaborate more efficiently, understanding the code's behavior without needing to dig through complex logic.  
+
+### 🧬 test.js  
 
 4. test.js
 
