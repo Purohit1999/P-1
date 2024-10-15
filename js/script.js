@@ -42,6 +42,10 @@ const referenceNumber = document.getElementById("reference-number");
 const homeButton = document.getElementById("home-button");
 
 // Format Card Number
+/**
+ * Event listener for formatting and validating the card number input.
+ * It restricts input to numeric characters and formats the number in groups of 4.
+ */
 cardNumber.addEventListener("input", () => {
     let formattedNumber = cardNumber.value.replace(/\D/g, "");
     formattedNumber = formattedNumber.substring(0, 16);
@@ -59,6 +63,10 @@ cardNumber.addEventListener("input", () => {
 });
 
 // Update Card Holder Name
+/**
+ * Event listener for updating and validating the cardholder's name input.
+ * It restricts the input to letters and spaces only.
+ */
 cardNameInput.addEventListener("input", () => {
     const name = cardNameInput.value.trim();
     cardHolderName.innerText = name.length < 1 ? "Your Name Here" : name.substring(0, 30).toUpperCase();
@@ -72,6 +80,10 @@ cardNameInput.addEventListener("input", () => {
 });
 
 // Format Validity
+/**
+ * Event listener for formatting and validating the expiry date input.
+ * It accepts input in the format MM/YY and checks that the date is valid and in the future.
+ */
 validityInput.addEventListener("input", (e) => {
     let inputString = e.target.value.replace(/\D/g, "");
     let formattedString = "";
@@ -118,15 +130,22 @@ cvvInput.addEventListener("input", () => {
     }
 });
 
+// Event listener to rotate the card when CVV field is focused
 cvvInput.addEventListener("focus", () => {
     cardElement.style.transform = "rotateY(180deg)";
 });
 
+/**
+ * Event listener to rotate the card back to its original position when the CVV field loses focus.
+ */
 cvvInput.addEventListener("blur", () => {
     cardElement.style.transform = "rotateY(0deg)";
 });
 
 // Add this new event listener to handle clicks outside the CVV input
+/**
+ * Event listener to handle clicks outside the CVV input field, ensuring the card rotates back to its original state.
+ */
 document.addEventListener("click", (event) => {
     if (event.target !== cvvInput && !cvvInput.contains(event.target)) {
         cardElement.style.transform = "rotateY(0deg)";
@@ -148,6 +167,11 @@ function verifyOtp(otp) {
 
 // Form Validation and Submission using async/await
 // Add form submission validation for CVV length
+/**
+ * Event listener for handling form submission. 
+ * It validates that the CVV is exactly 3 digits and that the OTP entered is valid.
+ * If all validations pass, it generates a reference number and displays the success page.
+ */
 paymentForm.addEventListener("submit", (e) => {
     e.preventDefault();
     
@@ -256,6 +280,9 @@ paymentForm.addEventListener("submit", (e) => {
 
 
 // Return to home page
+/**
+ * Event listener for the home button. Resets the form and displays the payment form again.
+ */
 homeButton.addEventListener("click", () => {
     landingPage.style.display = "none";
     document.querySelector(".wrapper").style.display = "flex";
@@ -263,6 +290,9 @@ homeButton.addEventListener("click", () => {
 });
 
 // Reset fields
+/**
+ * Function to reset the form fields and the visual display of the card.
+ */
 function resetForm() {
     cardNumber.value = "";
     cardNameInput.value = "";
