@@ -80,8 +80,14 @@ validityInput.addEventListener("input", (e) => {
 
 // Format and Display CVV
 cvvInput.addEventListener("input", () => {
+    // Only accept digits and limit input to 3 digits
     cvvInput.value = cvvInput.value.replace(/\D/g, "").substring(0, 3);
     cvvDisplay.innerText = cvvInput.value;
+
+    // Optionally show a message or visual cue for invalid length
+    if (cvvInput.value.length !== 3) {
+        cvvDisplay.innerText = "Invalid CVV";  // You can remove this if not needed
+    }
 });
 
 cvvInput.addEventListener("focus", () => {
@@ -113,32 +119,47 @@ function verifyOtp(otp) {
 }
 
 // Form Validation and Submission using async/await
-paymentForm.addEventListener("submit", async (e) => {
+// Add form submission validation for CVV length
+paymentForm.addEventListener("submit", (e) => {
     e.preventDefault();
     
-    const otp = document.getElementById("otp").value;
-    
-    try {
-        const verificationMessage = await verifyOtp(otp);
-        showPopup(verificationMessage);
+    const cvv = cvvInput.value;
 
-        // Generate random reference number
-        const refNumber = Math.random().toString(36).substring(2, 10).toUpperCase();
-        referenceNumber.textContent = refNumber;
-
-        // Show landing page
-        document.querySelector(".wrapper").style.display = "none";
-        landingPage.style.display = "block";
-    } catch (error) {
-        showPopup(error); // Handle invalid OTP
+    // Ensure CVV is exactly 3 digits
+    if (cvv.length !== 3) {
+        showPopup("CVV must be exactly 3 digits.");
+        return;
     }
+
+    const otp = document.getElementById("otp").value;
+
+    // Example validation for OTP (should be verified with server)
+    if (otp !== "123456") {
+        showPopup("Invalid OTP. Please try again.");
+        return;
+    }
+
+    // Generate random reference number
+    const refNumber = Math.random().toString(36).substring(2, 10).toUpperCase();
+    referenceNumber.textContent = refNumber;
+
+    // Show landing page
+    document.querySelector(".wrapper").style.display = "none";
+    landingPage.style.display = "block";
 });
 
+
+
+// Function to validate email format
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
 
 // Send OTP (Simulate API call with a Promise)
 function sendOtp(email) {
     return new Promise((resolve, reject) => {
-        if (!email) {
+        if (!email || !isValidEmail(email)) {
             reject("Please enter a valid email.");
         } else {
             // Simulate an API call with setTimeout (replace this with actual API call using fetch or axios)
@@ -148,6 +169,7 @@ function sendOtp(email) {
         }
     });
 }
+
 
 // Event listener for sending OTP
 otpButton.addEventListener("click", () => {
@@ -166,11 +188,20 @@ otpButton.addEventListener("click", () => {
 
 
 // Form Validation and Submission
+// Add form submission validation for CVV length
 paymentForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    
+
+    const cvv = cvvInput.value;
+
+    // Ensure CVV is exactly 3 digits
+    if (cvv.length !== 3) {
+        showPopup("CVV must be exactly 3 digits.");
+        return; // Prevent form submission if CVV is not valid
+    }
+
     const otp = document.getElementById("otp").value;
-    
+
     // Example validation for OTP (should be verified with server)
     if (otp !== "123456") {
         showPopup("Invalid OTP. Please try again.");
@@ -185,6 +216,7 @@ paymentForm.addEventListener("submit", (e) => {
     document.querySelector(".wrapper").style.display = "none";
     landingPage.style.display = "block";
 });
+
 
 // Return to home page
 homeButton.addEventListener("click", () => {
