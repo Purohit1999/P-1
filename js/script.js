@@ -307,6 +307,11 @@ function resetForm() {
 }
 
 // Show popup
+/**
+ * Displays a popup with a message on the page.
+ * The popup will disappear automatically after 5 seconds.
+ * @param {string} message - The message to display in the popup.
+ */
 function showPopup(message) {
     const popup = document.createElement("div");
     popup.className = "popup";
@@ -315,10 +320,18 @@ function showPopup(message) {
         <button onclick="removePopup(this.parentElement)">OK</button>
     `;
     document.body.appendChild(popup);
+
+    // Automatically remove the popup after 5 seconds (5000 milliseconds)
+    setTimeout(() => {
+        removePopup(popup);
+    }, 5000);
 }
 
-
 // Remove popup
+/**
+ * Removes the popup from the DOM.
+ * @param {HTMLElement} popup - The popup element to be removed.
+ */
 function removePopup(popup) {
     popup.remove();
 }
