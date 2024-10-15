@@ -603,7 +603,7 @@ Card Styles: Styling for the credit card preview, including the front and back v
 Form Styles: Enhanced input fields with focus effects, validation styling, and responsive design to ensure the form adapts well across different screen sizes.
 
 ## 🧪 Test
-3. script.js
+3. script.js  
 This file contains JavaScript code to add interactivity and dynamic behavior to the form, including:
 
 Real-Time Input Handling: Updates the card preview in real-time as the user types.
@@ -611,7 +611,44 @@ Card Number Formatting: Automatically formats the card number into groups of fou
 Card Flip Animation: Flips the card to the back when the CVV input is focused.
 Expiration Date Formatting: Ensures the expiration date is in the correct MM/YY format.
 Basic Input Validation: Restricts input to appropriate characters (e.g., numbers for card number and CVV).
-### 🧬 test.js
+### 🧬 test.js  
+
+📝 DocString  
+The script.js file is well-documented using docstrings, providing detailed descriptions of the script's purpose, functionality, and how it works. Each function and event listener in the script includes a docstring, which serves as a guide for understanding what the code does and how to maintain it.
+
+What is a DocString?
+A docstring is a specific form of documentation that is placed at the beginning of a function, file, or code block. It provides essential information about the function’s purpose, parameters, and return values. In the context of this script, docstrings are used to:
+
+Describe the purpose and functionality of the credit card payment form.
+Provide detailed explanations for each function, including parameters and return values.
+Document how event listeners handle real-time validation and user interactions.
+Key Functions Explained in DocStrings:
+isValidEmail: Validates the email format to ensure it matches a typical email structure (e.g., name@example.com).
+📧 Returns: true if valid, false otherwise.
+
+sendOtp: Simulates sending an OTP to the user's provided email.
+⏳ Simulated Delay: Uses a promise to represent an API call, resolving when the OTP is successfully "sent."
+
+verifyOtp: Verifies the OTP entered by the user, ensuring it matches the expected value (123456 in this simulation).
+✅ Returns: A promise that resolves if the OTP is correct and rejects if it’s wrong.
+
+showPopup: Displays a popup with a message to inform the user of errors or successful actions.
+💬 Message: Custom messages are passed in to give the user real-time feedback.
+
+resetForm: Resets the form fields and visual display on the page, ensuring the form can be filled out fresh after submission or a user action.
+🔄 Reset: Clears all fields like card number, CVV, and email.
+
+Event Listeners in DocStrings:
+Card Number Input: Automatically formats the card number as the user types and validates it in real-time.
+CVV Input: Ensures that the CVV is a 3-digit numeric value, updating the display on the card visualization as well.
+Form Submission: Validates the form before submission, checking for correct card details, valid OTP, and other necessary inputs before proceeding.
+Why Are DocStrings Important?
+🛠️ For Developers:
+Docstrings act as in-code documentation, making it easier for developers to understand the functionality of each function and event listener. This reduces confusion and allows for quicker debugging and enhancements.
+
+🧑‍💻 For Collaboration:
+With clear docstrings, multiple developers can collaborate more efficiently, understanding the code's behavior without needing to dig through complex logic.  
+
 4. test.js
 
 Explanation of Tests:
