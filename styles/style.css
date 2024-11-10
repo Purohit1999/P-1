@@ -35,6 +35,7 @@ body {
   transform-style: preserve-3d;
   transition: 0.3s;
 }
+
 /* Landing page styles */
 #landing-page {
   background-color: #ffffff;
@@ -245,6 +246,7 @@ form .date-cvv {
 .otp-section {
   margin-bottom: 1em;
 }
+
 /* Button Container Styles */
 .button-container {
   display: flex;
@@ -294,7 +296,6 @@ form .date-cvv {
 .submit-payment-button:hover {
   background-color: #0056b3;
 }
-
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
@@ -349,5 +350,20 @@ form .date-cvv {
 
   .details {
       font-size: 0.85em;
+  }
+}
+
+/* Media Query for Mobile Devices under 400px */
+@media screen and (max-width: 400px) {
+  /* Stack buttons vertically for better mobile view */
+  .button-container {
+    flex-direction: column; /* Arrange buttons in a vertical stack */
+    gap: 0.5em; /* Add space between buttons */
+  }
+
+  .send-otp-button, .submit-payment-button {
+    width: 100%; /* Full width for mobile view */
+    padding: 0.8em 0; /* Adjust padding for better touch area */
+    font-size: 1.1em;
   }
 }
