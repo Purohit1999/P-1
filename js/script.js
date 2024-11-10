@@ -104,9 +104,11 @@ validityInput.addEventListener("input", (e) => {
         const currentDate = new Date();
         const currentYear = currentDate.getFullYear() % 100;
         const currentMonth = currentDate.getMonth() + 1;
+        const maxYear = currentYear + 3; // Set max year to current year + 3 for a three-year range
 
         if (!/^(0[1-9]|1[0-2])\/\d{2}$/.test(formattedString) || 
             parseInt(year) < currentYear || 
+            parseInt(year) > maxYear || 
             (parseInt(year) === currentYear && parseInt(month) < currentMonth)) {
             showPopup("Please enter a valid future expiry date (MM/YY format).");
             e.target.value = "";
