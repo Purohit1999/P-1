@@ -276,12 +276,6 @@ form .date-cvv {
 }
 
 /* Submit Payment Button Styles */
-.submit-section {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 1em;
-}
-
 .submit-payment-button {
   padding: 0.8em 1.5em;
   font-size: 1.2em;
@@ -300,70 +294,43 @@ form .date-cvv {
 /* Media Queries */
 @media screen and (min-width: 768px) {
   .wrapper {
-      width: 80%;
-      max-width: 600px;
-      padding: 2.5em 1.5em;
+    width: 80%;
+    max-width: 600px;
+    padding: 2.5em 1.5em;
   }
 
   .credit-card {
-      padding-bottom: 56.25%;
+    padding-bottom: 56.25%;
   }
 
   .payment-info {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
 
   .branding img {
-      width: 60px;
+    width: 60px;
   }
 
   .card-number {
-      font-size: 1em;
+    font-size: 1em;
   }
 
   .details {
-      font-size: 1em;
+    font-size: 1em;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .wrapper {
-      width: 100%;
-      padding: 1.5em 1em;
-  }
-
-  .credit-card {
-      padding-bottom: 56.25%;
-  }
-
-  .payment-info {
-      font-size: 1.1em;
-  }
-
-  .branding img {
-      width: 40px;
-  }
-
-  .card-number {
-      font-size: 0.85em;
-  }
-
-  .details {
-      font-size: 0.85em;
-  }
-}
-
-/* Media Query for Mobile Devices under 400px */
 @media screen and (max-width: 400px) {
-  /* Stack buttons vertically for better mobile view */
+  /* Stack buttons vertically on very small screens */
   .button-container {
-    flex-direction: column; /* Arrange buttons in a vertical stack */
-    gap: 0.5em; /* Add space between buttons */
+    flex-direction: column;
+    gap: 0.5em;
   }
 
-  .send-otp-button, .submit-payment-button {
-    width: 100%; /* Full width for mobile view */
-    padding: 0.8em 0; /* Adjust padding for better touch area */
+  .send-otp-button,
+  .submit-payment-button {
+    width: 100%;
+    padding: 0.8em 0;
     font-size: 1.1em;
   }
 }

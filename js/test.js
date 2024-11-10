@@ -1,4 +1,4 @@
-// Import necessary dependencies
+// Import necessary dependencies for testing
 const { JSDOM } = require('jsdom');
 const fs = require('fs');
 const path = require('path');
@@ -23,10 +23,10 @@ describe('Credit Card Form', () => {
   describe('Form Elements', () => {
     it('should have all required form fields', () => {
       expect(container.querySelector('#card-number')).toBeTruthy();
-      expect(container.querySelector('#card-name-input')).toBeTruthy();
-      expect(container.querySelector('#validity-input')).toBeTruthy();
+      expect(container.querySelector('#card-holder')).toBeTruthy();
+      expect(container.querySelector('#expiry-date')).toBeTruthy();
       expect(container.querySelector('#cvv')).toBeTruthy();
-      expect(container.querySelector('#email')).toBeTruthy();
+      expect(container.querySelector('#email-otp')).toBeTruthy();
       expect(container.querySelector('#otp')).toBeTruthy();
     });
 
@@ -56,35 +56,35 @@ describe('Credit Card Form', () => {
   // Test card holder name input functionality
   describe('Card Holder Name Input', () => {
     it('should update card holder name display', () => {
-      const cardNameInput = container.querySelector('#card-name-input');
-      const cardHolderName = container.querySelector('#card-holder-name');
-      cardNameInput.value = 'John Doe';
-      cardNameInput.dispatchEvent(new dom.window.Event('input'));
-      expect(cardHolderName.textContent).toBe('JOHN DOE');
+      const cardHolderInput = container.querySelector('#card-holder');
+      const cardHolderNameDisplay = container.querySelector('#card-holder-name');
+      cardHolderInput.value = 'John Doe';
+      cardHolderInput.dispatchEvent(new dom.window.Event('input'));
+      expect(cardHolderNameDisplay.textContent).toBe('JOHN DOE');
     });
 
     it('should not allow numbers in card holder name', () => {
-      const cardNameInput = container.querySelector('#card-name-input');
-      cardNameInput.value = 'John123 Doe';
-      cardNameInput.dispatchEvent(new dom.window.Event('input'));
-      expect(cardNameInput.value).toBe('');
+      const cardHolderInput = container.querySelector('#card-holder');
+      cardHolderInput.value = 'John123 Doe';
+      cardHolderInput.dispatchEvent(new dom.window.Event('input'));
+      expect(cardHolderInput.value).toBe('');
     });
   });
 
   // Test expiry date input functionality
   describe('Expiry Date Input', () => {
     it('should format expiry date correctly', () => {
-      const validityInput = container.querySelector('#validity-input');
-      validityInput.value = '1223';
-      validityInput.dispatchEvent(new dom.window.Event('input'));
-      expect(validityInput.value).toBe('12/23');
+      const expiryDateInput = container.querySelector('#expiry-date');
+      expiryDateInput.value = '1223';
+      expiryDateInput.dispatchEvent(new dom.window.Event('input'));
+      expect(expiryDateInput.value).toBe('12/23');
     });
 
     it('should not allow invalid month', () => {
-      const validityInput = container.querySelector('#validity-input');
-      validityInput.value = '13/23';
-      validityInput.dispatchEvent(new dom.window.Event('input'));
-      expect(validityInput.value).toBe('');
+      const expiryDateInput = container.querySelector('#expiry-date');
+      expiryDateInput.value = '13/23';
+      expiryDateInput.dispatchEvent(new dom.window.Event('input'));
+      expect(expiryDateInput.value).toBe('');
     });
   });
 
@@ -109,7 +109,7 @@ describe('Credit Card Form', () => {
   describe('OTP Functionality', () => {
     it('should send OTP when button is clicked', () => {
       const sendOtpButton = container.querySelector('#send-otp');
-      const emailInput = container.querySelector('#email');
+      const emailInput = container.querySelector('#email-otp');
       emailInput.value = 'test@example.com';
       
       // Mock the showPopup function
@@ -175,5 +175,3 @@ describe('Credit Card Form', () => {
     });
   });
 });
-
-// Additional tests can be added for more specific behaviors and edge cases

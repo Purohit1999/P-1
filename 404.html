@@ -12,6 +12,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/style.css" />
     <style>
+      /* Styling for the body to center the content */
       body {
         background-color: #a6c4e8;
         display: flex;
@@ -19,21 +20,30 @@
         align-items: center;
         min-height: 100vh;
       }
+
+      /* Styling for the 404 error page container */
       .error-page {
         text-align: center;
         background-color: #ffffff;
         padding: 2em;
         border-radius: 1em;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
       }
+
+      /* Styling for the main 404 error heading */
       h1 {
         font-size: 3em;
         color: #333;
+        margin-bottom: 0.5em;
       }
+
+      /* Styling for the descriptive paragraph */
       p {
         font-size: 1.2em;
         margin-bottom: 1.5em;
       }
+
+      /* Styling for the redirect button */
       #redirect-button {
         padding: 0.8em 1.5em;
         font-size: 1.2em;
@@ -44,6 +54,8 @@
         cursor: pointer;
         transition: background-color 0.3s ease;
       }
+
+      /* Hover effect for the redirect button */
       #redirect-button:hover {
         background-color: #4a9ad9;
       }
@@ -51,19 +63,29 @@
   </head>
   <body>
     <div class="error-page">
+      <!-- Main heading indicating a 404 error -->
       <h1>404</h1>
+      <!-- Message indicating the page was not found -->
       <p>Oops! The page you're looking for doesn't exist.</p>
+      <!-- Instructional message for the user -->
       <p>You will be redirected to the homepage shortly.</p>
+      <!-- Button for immediate redirection to the homepage -->
       <button id="redirect-button">Go to Homepage</button>
     </div>
 
     <script>
-      // Automatically redirect to GitHub Pages main page after 5 seconds
+      /**
+       * Automatically redirects to the main page after a 5-second delay.
+       * Useful for users who might not click the button.
+       */
       setTimeout(function () {
         window.location.href = "https://purohit1999.github.io/p2/";
       }, 5000);
 
-      // Button for immediate redirect
+      /**
+       * Event listener for the redirect button.
+       * Allows users to go back to the homepage immediately.
+       */
       document.getElementById('redirect-button').addEventListener('click', function () {
         window.location.href = "https://purohit1999.github.io/p2/";
       });
