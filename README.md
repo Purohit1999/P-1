@@ -258,7 +258,7 @@ The following are the 2D skeleton models of the webpage design across various sc
 In the mobile view, the layout is designed to be compact and easily navigable, focusing on a vertical scroll experience. The credit card form fields are stacked for easy readability and interaction, with a dynamic credit card preview placed prominently above the form fields for real-time feedback.
 
 ### 💻 Tablet View
-![Tablet Wireframe](assets/images/tablet%20view%20.png)
+![Tablet Wireframe](assets/images/tablet-view.png)
 
 In the tablet view, the layout adjusts to take advantage of the larger screen size while maintaining simplicity. The credit card form is aligned alongside the card preview, offering a side-by-side view for better spatial orientation.
 
