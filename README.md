@@ -253,7 +253,7 @@ The wireframes demonstrate the layout for **Mobile**, **Tablet**, and **Desktop*
 The following are the 2D skeleton models of the webpage design across various screen sizes.
 
 ### 📱 Mobile View
-![Mobile Wireframe](assets/images/mobile%20view%20.png)
+![Mobile Wireframe](assets/images/mobile-view.png)
 
 In the mobile view, the layout is designed to be compact and easily navigable, focusing on a vertical scroll experience. The credit card form fields are stacked for easy readability and interaction, with a dynamic credit card preview placed prominently above the form fields for real-time feedback.
 
@@ -477,7 +477,7 @@ The `test.js` file contains unit tests that verify the core JavaScript functiona
 - **Error Handling**: Ensuring that the form provides appropriate error messages when users submit incorrect or incomplete data.
 
 These unit tests help maintain the integrity of the core functionality of the webpage and prevent bugs from being introduced during future updates.  
-![Mobile Wireframe](assets/images/jshint-validation.png)
+![JSHint](assets/images/jshint-validation.png)
 
 
 ### ❌ `404.html` Page
@@ -500,7 +500,7 @@ The HTML of the webpage was tested using the **W3C Markup Validator** to ensure 
 ### 🎨 W3C CSS Validator
 The CSS code was validated using the **W3C CSS Validator** to ensure proper styling syntax and compatibility across different browsers.
 
-![image](assets/images/css%20validation.png)
+![image](assets/images/css-validation.png)
 
 
 ### 🧭 Testing User Stories from User Experience (UX) Section
