@@ -8,10 +8,10 @@ Welcome to the Credit Card Form project! This repository contains the source cod
 
 ## 📋 Table of Contents
 1. [🔍 Project Overview](#project-overview)
-2. [🎨 UX/UI Design](#uxui-design)
-3. [🌈 Colour Scheme](#colour-scheme)
-4. [🖋️ Typography](#typography)
-5. [👤 User Stories](#user-stories)
+2. [👤 User Stories](#user-stories)
+3. [🎨 UX/UI Design](#uxui-design)
+4. [🌈 Colour Scheme](#colour-scheme)
+5. [🖋️ Typography](#typography)
 6. [🖼️ Imagery](#imagery)
 7. [📐 Wireframes](#wireframes)
 8. [🗺️ 2D Skeleton Models](#2d-skeleton-models)
@@ -476,7 +476,8 @@ The `test.js` file contains unit tests that verify the core JavaScript functiona
 - **Real-Time Updates**: Verifying that changes in the form fields are accurately reflected in the credit card preview in real-time.
 - **Error Handling**: Ensuring that the form provides appropriate error messages when users submit incorrect or incomplete data.
 
-These unit tests help maintain the integrity of the core functionality of the webpage and prevent bugs from being introduced during future updates.
+These unit tests help maintain the integrity of the core functionality of the webpage and prevent bugs from being introduced during future updates.  
+![Mobile Wireframe](assets/images/jshint-validation.png)
 
 
 ### ❌ `404.html` Page
