@@ -56,6 +56,42 @@ Added validation for OTP input during form submission.
 Added a home button to return to the main form.
 Resets the form and hides the landing page when the home button is clicked.
 
+
+## 👤 User Stories
+
+The following user stories represent the needs and goals of different users interacting with the credit card form webpage. These stories help guide the development of a user-centric interface and ensure that the design and functionality meet the expectations of the target audience.  
+
+### 🧑‍💻 As a User, I want to:
+1. **Easily enter my credit card details** so that I can complete a transaction without any confusion or errors.
+2. **Receive real-time feedback on my inputs** so that I know if I’ve entered incorrect or invalid information.
+3. **See a visual preview of my credit card details** so that I can verify that I’ve entered the correct data before submitting the form.
+4. **Experience a clean and modern interface** that is visually appealing and easy to navigate.
+5. **Have my sensitive information protected** through secure input methods and visual cues that indicate security.
+6. **Have my inputs automatically formatted** (e.g., adding spaces in the credit card number) to reduce errors and improve the usability of the form.
+7. **Submit the form without any delays** so that I can quickly proceed with my transaction.
+8. **Access the form on any device** (desktop, tablet, or mobile) with responsive design that adapts to various screen sizes.
+
+### 👪 As a Parent, I want to:
+1. **Feel confident that my payment information is secure** while entering credit card details on behalf of my child.
+2. **Complete the form quickly and efficiently** so that I can make a purchase for my child without unnecessary delays.
+3. **Receive clear error messages and instructions** if I accidentally enter incorrect information, ensuring I can fix issues immediately.
+
+### 🏢 As a Business Owner, I want to:
+1. **Provide a smooth and intuitive payment experience** that encourages users to complete their purchases without abandoning the process.
+2. **Improve conversion rates** by using a user-friendly credit card form that reduces friction during checkout.
+3. **Ensure the form is accessible to all users**, including those with disabilities, to expand the user base and comply with accessibility standards.
+4. **Maintain a professional and secure appearance** to build trust with users, ensuring they feel comfortable entering sensitive information on my platform.
+
+### 🛠️ As a Developer, I want to:
+1. **Implement real-time validation and feedback** to improve the user experience and reduce form submission errors.
+2. **Create a responsive design** that works seamlessly across different devices and screen sizes.
+3. **Ensure input data is properly formatted and validated** to maintain data consistency and avoid errors during processing.
+4. **Optimize the webpage for fast load times**, ensuring that users do not experience delays while interacting with the form.
+5. **Follow best practices for UX/UI design** to create an aesthetically pleasing and highly functional form that reflects modern web design trends.
+
+These user stories have shaped the development of the credit card form and guided design decisions to ensure that the final product is user-friendly, secure, and accessible for a wide range of users.
+
+
 ## 🎨 UX/UI Design
 
 ### 🎯 Project Goals
@@ -156,41 +192,6 @@ In case the primary font (`Poppins`) fails to load, the webpage falls back to a 
 - **Google Fonts**: The Poppins font is integrated via Google Fonts, ensuring fast and reliable delivery of the font files.
   ```html
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-
-## 👤 User Stories
-
-The following user stories represent the needs and goals of different users interacting with the credit card form webpage. These stories help guide the development of a user-centric interface and ensure that the design and functionality meet the expectations of the target audience.
-
-### 🧑‍💻 As a User, I want to:
-1. **Easily enter my credit card details** so that I can complete a transaction without any confusion or errors.
-2. **Receive real-time feedback on my inputs** so that I know if I’ve entered incorrect or invalid information.
-3. **See a visual preview of my credit card details** so that I can verify that I’ve entered the correct data before submitting the form.
-4. **Experience a clean and modern interface** that is visually appealing and easy to navigate.
-5. **Have my sensitive information protected** through secure input methods and visual cues that indicate security.
-6. **Have my inputs automatically formatted** (e.g., adding spaces in the credit card number) to reduce errors and improve the usability of the form.
-7. **Submit the form without any delays** so that I can quickly proceed with my transaction.
-8. **Access the form on any device** (desktop, tablet, or mobile) with responsive design that adapts to various screen sizes.
-
-### 👪 As a Parent, I want to:
-1. **Feel confident that my payment information is secure** while entering credit card details on behalf of my child.
-2. **Complete the form quickly and efficiently** so that I can make a purchase for my child without unnecessary delays.
-3. **Receive clear error messages and instructions** if I accidentally enter incorrect information, ensuring I can fix issues immediately.
-
-### 🏢 As a Business Owner, I want to:
-1. **Provide a smooth and intuitive payment experience** that encourages users to complete their purchases without abandoning the process.
-2. **Improve conversion rates** by using a user-friendly credit card form that reduces friction during checkout.
-3. **Ensure the form is accessible to all users**, including those with disabilities, to expand the user base and comply with accessibility standards.
-4. **Maintain a professional and secure appearance** to build trust with users, ensuring they feel comfortable entering sensitive information on my platform.
-
-### 🛠️ As a Developer, I want to:
-1. **Implement real-time validation and feedback** to improve the user experience and reduce form submission errors.
-2. **Create a responsive design** that works seamlessly across different devices and screen sizes.
-3. **Ensure input data is properly formatted and validated** to maintain data consistency and avoid errors during processing.
-4. **Optimize the webpage for fast load times**, ensuring that users do not experience delays while interacting with the form.
-5. **Follow best practices for UX/UI design** to create an aesthetically pleasing and highly functional form that reflects modern web design trends.
-
-These user stories have shaped the development of the credit card form and guided design decisions to ensure that the final product is user-friendly, secure, and accessible for a wide range of users.
 
 
 ## 🖼️ Imagery
