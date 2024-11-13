@@ -263,7 +263,7 @@ In the mobile view, the layout is designed to be compact and easily navigable, f
 In the tablet view, the layout adjusts to take advantage of the larger screen size while maintaining simplicity. The credit card form is aligned alongside the card preview, offering a side-by-side view for better spatial orientation.
 
 ### 🖥️ Desktop View
-![Desktop Wireframe](assets/images/desktop%20view.png)
+![Desktop Wireframe](assets/images/desktop-view.png)
 
 In the desktop view, the layout is expanded to provide a spacious and visually appealing interface. The form and the credit card preview are positioned for easy interaction, with sufficient spacing to maintain clarity and balance between elements.
 
