@@ -614,7 +614,10 @@ Real-Time Input Handling: Updates the card preview in real-time as the user type
 Card Number Formatting: Automatically formats the card number into groups of four digits.
 Card Flip Animation: Flips the card to the back when the CVV input is focused.
 Expiration Date Formatting: Ensures the expiration date is in the correct MM/YY format.
-Basic Input Validation: Restricts input to appropriate characters (e.g., numbers for card number and CVV).  
+Basic Input Validation: Restricts input to appropriate characters (e.g., numbers for card number and CVV).   
+
+![JSHint](assets/images/jshint-validation.png)  
+
 
 Here’s how you can add a **docString** section in your `README.md`, explaining the docstring information with relevant details. I have also included some emojis for a more engaging and visually appealing section.
 
