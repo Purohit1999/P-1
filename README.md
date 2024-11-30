@@ -495,7 +495,7 @@ By implementing a custom `404.html` page, the project enhances the overall user 
 ### 🔍 W3C Markup Validator
 The HTML of the webpage was tested using the **W3C Markup Validator** to ensure that the code adheres to web standards and is free of syntax errors.
 
-![image](assets/images/html%20validation.png)
+![image](assets/images/html_validation.png)
 
 ### 🎨 W3C CSS Validator
 The CSS code was validated using the **W3C CSS Validator** to ensure proper styling syntax and compatibility across different browsers.
