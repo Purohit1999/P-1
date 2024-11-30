@@ -444,7 +444,6 @@ The testing process followed key principles to ensure reliability and maintainab
 - **Automation Where Possible**: Automated tests were utilized to minimize manual testing time and catch regressions when making updates.
 - **User-Centered Testing**: Tests were designed from the perspective of the end-user to ensure a seamless and intuitive user experience.
 
-Here's the updated `README.md` with relevant image links added to illustrate the user stories under "Testing User Stories from User Experience (UX) Section":
 
 ---
 
