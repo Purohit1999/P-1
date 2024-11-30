@@ -444,6 +444,91 @@ The testing process followed key principles to ensure reliability and maintainab
 - **Automation Where Possible**: Automated tests were utilized to minimize manual testing time and catch regressions when making updates.
 - **User-Centered Testing**: Tests were designed from the perspective of the end-user to ensure a seamless and intuitive user experience.
 
+Here's the updated `README.md` with relevant image links added to illustrate the user stories under "Testing User Stories from User Experience (UX) Section":
+
+---
+
+### 🧑‍💻 Testing User Stories from User Experience (UX) Section
+
+#### 🆕 First Time Visitor Goals
+
+- **As a First Time Visitor, I want to easily understand the main purpose of the site and learn how to use the credit card payment form.**
+
+  - *Upon entering the site, the user is greeted with a clean and intuitive credit card payment form.*
+  - *The form fields are clearly labeled, and placeholders guide the user on what information to input.*
+  - *A visual representation of the credit card updates in real-time as the user inputs data, enhancing understanding.*
+  
+  
+
+- **As a First Time Visitor, I want to receive immediate feedback if I enter incorrect information.**
+
+  - *Real-time validation is implemented for all input fields.*
+  - *If invalid data is entered (e.g., letters in the card number field), an error popup appears with a clear message.*
+  - *Tested by entering invalid inputs and confirming that appropriate error messages are displayed and inputs are reset if necessary.*
+  
+  
+
+- **As a First Time Visitor, I want to be able to navigate the form easily on both desktop and mobile devices.**
+
+  - *The form is responsive and adapts to different screen sizes.*
+  - *Tested on various devices (desktop, tablet, mobile) to ensure usability and readability.*
+  - *Input fields and buttons are appropriately sized for touch interaction on mobile devices.*
+  
+  ![Responsive Form on Mobile Devices](assets/images/first_ux.png)
+
+---
+
+#### 🔄 Returning Visitor Goals
+
+- **As a Returning Visitor, I want to quickly complete the payment form without unnecessary delays.**
+
+  - *Input fields are optimized for quick entry, with automatic formatting (e.g., card number groups digits automatically).*
+  - *The expiry date input auto-formats to MM/YY, reducing the chance of errors.*
+  - *Tested by completing the form multiple times to ensure efficiency and speed.*
+  
+  
+
+- **As a Returning Visitor, I want to reset the form easily if I need to start over.**
+
+  - *A reset functionality is available that clears all inputs and resets the card display.*
+  - *Tested by filling in the form and then invoking the reset to ensure all fields are cleared and the form returns to its initial state.*
+  
+  
+
+- **As a Returning Visitor, I want confirmation that my payment was successful.**
+
+  - *Upon successful form submission and validation, a landing page displays a success message along with a reference number.*
+  - *Tested by completing the form correctly and verifying that the success page appears with the generated reference number.*
+  
+  ![Success Page with Reference Number](assets/images/sec_ux.png)
+
+---
+
+#### 🔁 Frequent User Goals
+
+- **As a Frequent User, I want assurance that my data is handled securely and my privacy is respected.**
+
+  - *No actual payment processing occurs, and sensitive data is not stored or transmitted.*
+  - *The OTP feature simulates verification without sending real emails, ensuring data privacy.*
+  - *Reviewed code to confirm that no personal data is mishandled.*
+  
+  
+
+- **As a Frequent User, I want to receive help or guidance if I encounter issues with the form.**
+
+  - *Error messages and popups provide clear instructions on how to correct mistakes.*
+  - *Tested by intentionally causing errors (e.g., entering an incorrect OTP) and verifying that helpful feedback is provided.*
+  
+  
+
+- **As a Frequent User, I want the form to remember common inputs to expedite the process.**
+
+  - *Browser's autocomplete features can assist with common inputs like email, enhancing usability.*
+  - *Tested by enabling autocomplete and ensuring it functions correctly without compromising security.*
+  
+  ![Browser Autocomplete Functionality](assets/images/second_ux.png)
+
+---
 
 ### 🧑‍💻 Behavior-Driven Development (BDD)
 
