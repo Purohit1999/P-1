@@ -10,6 +10,9 @@
     />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/style.css" />
+    <!-- Flatpickr Library for Calendar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <!-- External API Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.3/axios.min.js"></script>
   </head>
@@ -25,30 +28,11 @@
           </div>
           <!-- Card number display -->
           <div class="card-number">
-            <div>
-              <span class="card-number-display">_</span>
-              <span class="card-number-display">_</span>
-              <span class="card-number-display">_</span>
-              <span class="card-number-display">_</span>
-            </div>
-            <div>
-              <span class="card-number-display">_</span>
-              <span class="card-number-display">_</span>
-              <span class="card-number-display">_</span>
-              <span class="card-number-display">_</span>
-            </div>
-            <div>
-              <span class="card-number-display">_</span>
-              <span class="card-number-display">_</span>
-              <span class="card-number-display">_</span>
-              <span class="card-number-display">_</span>
-            </div>
-            <div>
-              <span class="card-number-display">_</span>
-              <span class="card-number-display">_</span>
-              <span class="card-number-display">_</span>
-              <span class="card-number-display">_</span>
-            </div>
+            <!-- Display formatted card number dynamically -->
+            <div><span class="card-number-display">_</span></div>
+            <div><span class="card-number-display">_</span></div>
+            <div><span class="card-number-display">_</span></div>
+            <div><span class="card-number-display">_</span></div>
           </div>
           <!-- Card holder and expiry date display -->
           <div class="details">
@@ -72,10 +56,9 @@
           <img src="./assets/images/visa.png" class="visa-logo" alt="Visa Logo" />
         </div>
       </div>
-      <div class="payment-info">Payment Information:</div>
-      
-       <!-- Payment form -->
-       <form id="payment-form">
+
+      <!-- Payment form -->
+      <form id="payment-form">
         <label for="card-number">Card Number</label>
         <input
           type="text"
@@ -83,8 +66,6 @@
           placeholder="1234 1234 1234 1234"
           maxlength="19"
           required
-          oninvalid="this.setCustomValidity('Please fill out the card number field')"
-          oninput="this.setCustomValidity('')"
         />
         <label for="card-holder">Card Holder:</label>
         <input
@@ -97,6 +78,7 @@
         <div class="date-cvv">
           <div>
             <label for="expiry-date">Expires On:</label>
+            <!-- Calendar picker input -->
             <input
               type="text"
               id="expiry-date"
@@ -125,9 +107,6 @@
             required
           />
         </div>
-        <!-- Payment form -->
-      <form id="payment-form">
-        <!-- Previous form fields remain unchanged -->
         <div class="otp-section">
           <label for="otp">Enter OTP:</label>
           <input
@@ -145,15 +124,13 @@
       </form>
     </div>
 
-        
-
     <!-- Landing page -->
     <div id="landing-page" style="display: none;">
       <h2>Transaction Complete</h2>
       <p class="reference">Your reference number is: <span id="reference-number"></span></p>
-      <p class="instruction">Please make a note of this number and keep it safe.</p>
       <button id="home-button">Return to Home</button>
     </div>
+
     <!-- Script -->
     <script src="js/script.js"></script>
   </body>
