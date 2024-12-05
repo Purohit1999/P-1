@@ -86,7 +86,9 @@
           placeholder="1234 1234 1234 1234"
           maxlength="19"
           required
-        />
+          oninvalid="this.setCustomValidity('Please fill out the card number field')"
+          oninput="this.setCustomValidity('')"
+          />
         <label for="card-holder">Card Holder:</label>
         <input
           type="text"
